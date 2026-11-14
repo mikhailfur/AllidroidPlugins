@@ -1,0 +1,10 @@
+{
+  "name": "ReadAllNotificationsButton",
+  "description": "Кнопка «Прочитать всё»: отмечает все непрочитанные серверные каналы прочитанными одним нажатием.",
+  "authors": [{"name": "mikhailfur"}, {"name": "kemo"}, {"name": "V"}],
+  "icon": "CheckmarkIcon",
+  "category": "Notifications",
+  "upstream": "readAllNotificationsButton",
+  "status": "ported",
+  "version": "1.0.0"
+}

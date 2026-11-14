@@ -1,0 +1,20 @@
+{
+  "name": "PlatformIndicators",
+  "description": "Показывает значки платформ (ПК, веб, мобильный, VR) рядом с именами и в профилях.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "MSMA"
+    }
+  ],
+  "main": "index.js",
+  "hash": "b3bd4571ad6970b58b807ff8551199e9003016d52f3fcd408aa85c25b5eee7c1",
+  "vendetta": {
+    "icon": "DesktopIcon"
+  }
+}

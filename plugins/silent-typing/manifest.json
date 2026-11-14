@@ -1,0 +1,23 @@
+{
+  "name": "SilentTyping",
+  "description": "Скрывает индикатор «печатает…» от других пользователей. Можно выключить на время.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "rini"
+    },
+    {
+      "name": "Im_Banana"
+    }
+  ],
+  "main": "index.js",
+  "hash": "8d2aaeab48e1b275eac777e32b2a1ab81b3f4532db60c5b579233603528b862e",
+  "vendetta": {
+    "icon": "KeyboardIcon"
+  }
+}

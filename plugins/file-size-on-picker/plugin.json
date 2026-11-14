@@ -1,0 +1,10 @@
+{
+  "name": "FileSizeOnPicker",
+  "description": "Показывает размер файла прямо на превью в медиа-пикере.",
+  "authors": [{"name": "mikhailfur"}, {"name": "MSMA"}],
+  "icon": "FileIcon",
+  "category": "Media",
+  "upstream": "fileSizeOnPicker",
+  "status": "ported",
+  "version": "1.0.0"
+}

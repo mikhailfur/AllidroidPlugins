@@ -1,0 +1,10 @@
+{
+  "name": "ClearURLs",
+  "description": "Удаляет utm-метки и другие трекеры из ссылок перед отправкой.",
+  "authors": [{"name": "mikhailfur"}, {"name": "adryd"}, {"name": "thororen"}],
+  "icon": "LinkIcon",
+  "category": "Privacy",
+  "upstream": "clearURLs",
+  "status": "ported",
+  "version": "1.0.0"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "MoveAllVoice",
+  "description": "Долгое нажатие на голосовой канал: перенести всех участников в другой голосовой канал.",
+  "authors": [{"name": "mikhailfur"}],
+  "icon": "VoiceNormalIcon",
+  "category": "Voice",
+  "upstream": "bonus",
+  "status": "bonus",
+  "version": "1.0.0",
+  "notes": "Бонус вне топ-30 Vencord. Оригинал: github.com/mikhailfur/MoveAllVoice."
+}

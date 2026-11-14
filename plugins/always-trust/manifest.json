@@ -1,0 +1,20 @@
+{
+  "name": "AlwaysTrust",
+  "description": "Убирает предупреждение о недоверенном домене при открытии внешних ссылок.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "zt"
+    },
+    {
+      "name": "Trwy"
+    }
+  ],
+  "main": "index.js",
+  "hash": "49641d9d3707c9b530c616eb0244777a1034c07f2df361d8e0d417e0bf438149",
+  "vendetta": {
+    "icon": "ShieldIcon"
+  }
+}

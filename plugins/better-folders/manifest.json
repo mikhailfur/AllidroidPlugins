@@ -1,0 +1,20 @@
+{
+  "name": "BetterFolders",
+  "description": "Улучшает папки серверов: автозакрытие других папок и скрытие иконок серверов у свёрнутых папок.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "fres"
+    }
+  ],
+  "main": "index.js",
+  "hash": "212dafc90de91d6d350d274481b59ba1c245404167a7255ffa858dc2b551b9cd",
+  "vendetta": {
+    "icon": "FolderIcon"
+  }
+}

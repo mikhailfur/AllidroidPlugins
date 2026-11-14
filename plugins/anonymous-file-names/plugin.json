@@ -1,0 +1,10 @@
+{
+  "name": "AnonymousFileNames",
+  "description": "Случайные имена для загружаемых файлов. Полезно, когда имя файла слишком личное.",
+  "authors": [{"name": "mikhailfur"}, {"name": "k1ng_op"}, {"name": "siguma"}, {"name": "Palm"}],
+  "icon": "UnknownGameIcon",
+  "category": "Privacy",
+  "upstream": "anonymiseFileNames",
+  "status": "ported",
+  "version": "1.0.0"
+}

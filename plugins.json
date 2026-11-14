@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-11-14T07:57:08.125Z",
+  "repo": "mikhailfur/AllidroidPlugins",
+  "branch": "main",
+  "plugins": [
+    {
+      "id": "always-trust",
+      "name": "AlwaysTrust",
+      "description": "Убирает предупреждение о недоверенном домене при открытии внешних ссылок.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "zt"
+        },
+        {
+          "name": "Trwy"
+        }
+      ],
+      "icon": "ShieldIcon",
+      "category": "Utility",
+      "upstream": "alwaysTrust",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "49641d9d3707c9b530c616eb0244777a1034c07f2df361d8e0d417e0bf438149",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/always-trust/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/always-trust/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/always-trust/"
+    },
+    {
+      "id": "anonymous-file-names",
+      "name": "AnonymousFileNames",
+      "description": "Случайные имена для загружаемых файлов. Полезно, когда имя файла слишком личное.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "k1ng_op"
+        },
+        {
+          "name": "siguma"
+        },
+        {
+          "name": "Palm"
+        }
+      ],
+      "icon": "UnknownGameIcon",
+      "category": "Privacy",
+      "upstream": "anonymiseFileNames",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "a59ecf39d663a9fe3ca0f2ec2f8902db0edab32f3da5a853e5b6b137e0dff7c2",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/anonymous-file-names/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/anonymous-file-names/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/anonymous-file-names/"
+    },
+    {
+      "id": "better-folders",
+      "name": "BetterFolders",
+      "description": "Улучшает папки серверов: автозакрытие других папок и скрытие иконок серверов у свёрнутых папок.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "fres"
+        }
+      ],
+      "icon": "FolderIcon",
+      "category": "Servers",
+      "upstream": "betterFolders",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "212dafc90de91d6d350d274481b59ba1c245404167a7255ffa858dc2b551b9cd",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-folders/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-folders/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-folders/"
+    },
+    {
+      "id": "better-search",
+      "name": "BetterSearch",
+      "description": "Улучшает поиск сообщений: номер страницы можно менять нажатием, без прокрутки всего списка.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "fres"
+        },
+        {
+          "name": "V"
+        }
+      ],
+      "icon": "SearchIcon",
+      "category": "Chat",
+      "upstream": "betterSearch",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "0d865ad370cad5fec8db20ee5ff657bab7bf441026780eea3748a0d8c1303f8f",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-search/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-search/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-search/"
+    },
+    {
+      "id": "character-counter",
+      "name": "CharacterCounter",
+      "description": "Показывает количество символов в поле чата и лимит, с жёлтым/красным цветом ближе к пределу.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "thororen"
+        },
+        {
+          "name": "creations"
+        }
+      ],
+      "icon": "TextIcon",
+      "category": "Chat",
+      "upstream": "characterCounter",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "41a7559d7dd083190be604c29fc97008b4e9e062006b935f93553bc1e20175e5",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/character-counter/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/character-counter/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/character-counter/"
+    },
+    {
+      "id": "clear-urls",
+      "name": "ClearURLs",
+      "description": "Удаляет utm-метки и другие трекеры из ссылок перед отправкой.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "adryd"
+        },
+        {
+          "name": "thororen"
+        }
+      ],
+      "icon": "LinkIcon",
+      "category": "Privacy",
+      "upstream": "clearURLs",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "321c3de6f89cc6f06a97748656812f21758c8e7264669c5ea225b30ef9919940",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/clear-urls/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/clear-urls/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/clear-urls/"
+    },
+    {
+      "id": "copy-emoji-markdown",
+      "name": "CopyEmojiMarkdown",
+      "description": "Добавляет «Скопировать markdown эмодзи» в меню эмодзи: <:name:id> или <a:name:id>.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "HappyEnderman"
+        },
+        {
+          "name": "Vishnya"
+        }
+      ],
+      "icon": "CopyIcon",
+      "category": "Emotes",
+      "upstream": "copyEmojiMarkdown",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "21fef39f63d00f864477a2d18093bb43b9ed024940c6765d388ee9d4084bdf8d",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/copy-emoji-markdown/"
+    },
+    {
+      "id": "dearrow",
+      "name": "Dearrow",
+      "description": "Заменяет кричащие заголовки и превью YouTube-эмбедов на спокойные из Dearrow.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        }
+      ],
+      "icon": "YouTubeIcon",
+      "category": "Media",
+      "upstream": "dearrow",
+      "status": "beta",
+      "version": "1.0.0",
+      "notes": "Заголовки и превью подтягиваются с sponsor.ajay.app. Если API недоступен, эмбеды остаются как есть.",
+      "hash": "0828abc0af35477cb143a5ec7dc4279a5442d5d985cbcd98452cab634a02b495",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/dearrow/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/dearrow/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/dearrow/"
+    },
+    {
+      "id": "disable-call-idle",
+      "name": "DisableCallIdle",
+      "description": "Не выкидывает из пустого голосового канала через 3 минуты.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "k1ng_op"
+        },
+        {
+          "name": "V"
+        }
+      ],
+      "icon": "PhoneCallIcon",
+      "category": "Voice",
+      "upstream": "disableCallIdle",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "a61285433970533b1020e7e3e13fde24834a292db3d35198c0293908cfb53a24",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/disable-call-idle/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/disable-call-idle/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/disable-call-idle/"
+    },
+    {
+      "id": "expression-cloner",
+      "name": "ExpressionCloner",
+      "description": "Клонирует кастомные эмодзи на сервер, где у вас есть право управлять эмодзи.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "Nuckyz"
+        },
+        {
+          "name": "Amelia"
+        },
+        {
+          "name": "sadan"
+        },
+        {
+          "name": "fierdetta"
+        }
+      ],
+      "icon": "EmojiIcon",
+      "category": "Emotes",
+      "upstream": "expressionCloner",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Клонирование эмодзи. Клонирование стикеров появится позже.",
+      "hash": "c5c39870be4b653d4ee69e3e3dadd5b7578b72e70ff31a17e141209f09ca4107",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/expression-cloner/"
+    },
+    {
+      "id": "fake-nitro",
+      "name": "FakeNitro",
+      "description": "Позволяет отправлять кастомные эмодзи без Nitro, менять размер эмодзи и включать часть Nitro-тем.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "ArjixWasTaken"
+        },
+        {
+          "name": "D3SOX"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "Nuckyz"
+        },
+        {
+          "name": "AutumnVN"
+        },
+        {
+          "name": "sadan"
+        },
+        {
+          "name": "Palm"
+        }
+      ],
+      "icon": "NitroWheelIcon",
+      "category": "Emotes",
+      "upstream": "fakeNitro",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Эмодзи отправляются как ссылки и превращаются в картинки на клиенте. Часть Nitro-функций (темы, иконки приложения) зависит от версии Discord.",
+      "hash": "eeea3c62b76f460efe964fb27f25fdccaa15ff2b93da579eaaf588032969aba7",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/fake-nitro/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/fake-nitro/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/fake-nitro/"
+    },
+    {
+      "id": "file-size-on-picker",
+      "name": "FileSizeOnPicker",
+      "description": "Показывает размер файла прямо на превью в медиа-пикере.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "MSMA"
+        }
+      ],
+      "icon": "FileIcon",
+      "category": "Media",
+      "upstream": "fileSizeOnPicker",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "97e30454d8da36220f0e2b6cb87a4f8b6fbf0c6b2a1b65098befe6701c22754e",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/file-size-on-picker/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/file-size-on-picker/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/file-size-on-picker/"
+    },
+    {
+      "id": "hide-attachments",
+      "name": "HideAttachments",
+      "description": "Скрывает вложения и эмбеды у отдельных сообщений через долгое нажатие. Включается и выключается на каждом сообщении.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "c0nnorgg"
+        }
+      ],
+      "icon": "ImageInvisibleIcon",
+      "category": "Chat",
+      "upstream": "hideAttachments",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "acb9b51e760d8ced2e2e4c2a6afe851d6f02daf3905166a710be0a0ef9d1cfa1",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/hide-attachments/"
+    },
+    {
+      "id": "message-logger",
+      "name": "MessageLogger",
+      "description": "Показывает удалённые и изменённые сообщения до перезапуска приложения. История правок и удалений.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "rushii"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "AutumnVN"
+        },
+        {
+          "name": "Nickyux"
+        },
+        {
+          "name": "Kyuuhachi"
+        },
+        {
+          "name": "sadan"
+        },
+        {
+          "name": "f3tch"
+        },
+        {
+          "name": "Angel~"
+        },
+        {
+          "name": "kasi"
+        }
+      ],
+      "icon": "ChatIcon",
+      "category": "Chat",
+      "upstream": "messageLogger",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Мобильная реализация с логом удалений и правок в строках чата. История живёт до перезапуска Allidroid.",
+      "hash": "61183a9e92c2e687bd1b0790df2d58f58a9bb505a515283fa61b793cbdacd8c3",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/message-logger/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-logger/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/message-logger/"
+    },
+    {
+      "id": "move-all-voice",
+      "name": "MoveAllVoice",
+      "description": "Долгое нажатие на голосовой канал: перенести всех участников в другой голосовой канал.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        }
+      ],
+      "icon": "VoiceNormalIcon",
+      "category": "Voice",
+      "upstream": "bonus",
+      "status": "bonus",
+      "version": "1.0.0",
+      "notes": "Бонус вне топ-30 Vencord. Оригинал: github.com/mikhailfur/MoveAllVoice.",
+      "hash": "91867985746129962464d1f76fd7641598f3ae9492433ba424b3248645784ee8",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/move-all-voice/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/move-all-voice/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/move-all-voice/"
+    },
+    {
+      "id": "no-blocked-messages",
+      "name": "NoBlockedMessages",
+      "description": "Скрывает сообщения заблокированных и игнорируемых пользователей, а также ответы на них.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "zy krah"
+        },
+        {
+          "name": "Palm"
+        }
+      ],
+      "icon": "DenyIcon",
+      "category": "Chat",
+      "upstream": "noBlockedMessages",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "5ed9a515b9ea44c86ac248de2ab0f488da0a39649c68b644e4644f33fb0eba72",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-blocked-messages/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-blocked-messages/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-blocked-messages/"
+    },
+    {
+      "id": "no-pending-count",
+      "name": "NoPendingCount",
+      "description": "Убирает красный счётчик входящих заявок в друзья и запросов сообщений.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "amia"
+        }
+      ],
+      "icon": "FriendsIcon",
+      "category": "Notifications",
+      "upstream": "noPendingCount",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "a3692a4bfbadc029c1409c92cbee1a0cb5a9e86dbabd2b8569631a7663788645",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-pending-count/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-pending-count/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-pending-count/"
+    },
+    {
+      "id": "no-reply-mention",
+      "name": "NoReplyMention",
+      "description": "Отключает пинг автора при ответе на сообщение. Больше случайных упоминаний.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "DustyAngel47"
+        },
+        {
+          "name": "rae"
+        },
+        {
+          "name": "pylix"
+        },
+        {
+          "name": "outfoxxed"
+        }
+      ],
+      "icon": "MentionIcon",
+      "category": "Notifications",
+      "upstream": "noReplyMention",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "92050a8370392c26f47098edbeef37bcc02872bf7d1c0985b7e7f3ebe4c8d1b2",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-reply-mention/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-reply-mention/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-reply-mention/"
+    },
+    {
+      "id": "pin-dms",
+      "name": "PinDMs",
+      "description": "Закрепляет выбранные ЛС вверху списка личных сообщений.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "fres"
+        },
+        {
+          "name": "V"
+        }
+      ],
+      "icon": "PinIcon",
+      "category": "Chat",
+      "upstream": "pinDMs",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Упрощённая мобильная версия: закрепление в начало списка без категорий.",
+      "hash": "b86da98f334131363c85f2ec9a9897093c87149cfc7ef873949f67682d85816c",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pin-dms/"
+    },
+    {
+      "id": "platform-indicators",
+      "name": "PlatformIndicators",
+      "description": "Показывает значки платформ (ПК, веб, мобильный, VR) рядом с именами и в профилях.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "MSMA"
+        }
+      ],
+      "icon": "DesktopIcon",
+      "category": "Profiles",
+      "upstream": "platformIndicators",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Платформы берутся из PresenceStore и SessionsStore. Цвет значка соответствует статусу.",
+      "hash": "b3bd4571ad6970b58b807ff8551199e9003016d52f3fcd408aa85c25b5eee7c1",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/platform-indicators/"
+    },
+    {
+      "id": "pronoundb",
+      "name": "PronounDB",
+      "description": "Показывает местоимения из PronounDB в профилях и сообщениях.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "Rosie"
+        },
+        {
+          "name": "pylix"
+        }
+      ],
+      "icon": "AccessibilityIcon",
+      "category": "Profiles",
+      "upstream": "pronounDB",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Данные берутся из публичного API pronoundb.org. Ничего не отправляется без вашего запроса.",
+      "hash": "4c478d769802b1ca1649369864e243e4820a81cc85bd287ff51bf48a9e53f043",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pronoundb/"
+    },
+    {
+      "id": "read-all-notifications",
+      "name": "ReadAllNotificationsButton",
+      "description": "Кнопка «Прочитать всё»: отмечает все непрочитанные серверные каналы прочитанными одним нажатием.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "kemo"
+        },
+        {
+          "name": "V"
+        }
+      ],
+      "icon": "CheckmarkIcon",
+      "category": "Notifications",
+      "upstream": "readAllNotificationsButton",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "cb01eea07b6d39a51677b61da7d8b50c63d87374aec09313e5a5fe8b6e716a13",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/read-all-notifications/"
+    },
+    {
+      "id": "reviewdb",
+      "name": "ReviewDB",
+      "description": "Отзывы на профили пользователей: чтение, добавление и удаление своих отзывов.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "mantikafasi"
+        },
+        {
+          "name": "Fiery"
+        }
+      ],
+      "icon": "StarIcon",
+      "category": "Profiles",
+      "upstream": "reviewDB",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Использует официальный API ReviewDB. Для отправки отзывов нужна авторизация через Discord OAuth.",
+      "hash": "926efe944d81317faac1b28d9b9c88d61a58cd31f869776ef6a7993b911e2dd5",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/reviewdb/"
+    },
+    {
+      "id": "send-timestamps",
+      "name": "SendTimestamps",
+      "description": "Кнопка в поле чата для вставки Discord-таймстампа и автозамена `HH:MM` при отправке.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "Tyler"
+        },
+        {
+          "name": "Grzesiek11"
+        }
+      ],
+      "icon": "CalendarIcon",
+      "category": "Chat",
+      "upstream": "sendTimestamps",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "3bbf2c88517fab52bbd3508c2ba83054f9c78fdbe6b347d65290319f2ddfe7e1",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/send-timestamps/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/send-timestamps/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/send-timestamps/"
+    },
+    {
+      "id": "show-hidden-channels",
+      "name": "ShowHiddenChannels",
+      "description": "Показывает скрытые каналы: название, тему, дату создания, последнее сообщение и пины.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "c10udburst"
+        }
+      ],
+      "icon": "EyeIcon",
+      "category": "Servers",
+      "upstream": "showHiddenChannels",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Открывает канал в режиме «только просмотр»: сообщения не подгружаются, история не раскрывается.",
+      "hash": "c33263f066639fcbbdd41670bce6a552e72afb1495c296e84baad94c399eb992",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-hidden-channels/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-hidden-channels/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/show-hidden-channels/"
+    },
+    {
+      "id": "show-timeout-duration",
+      "name": "ShowTimeoutDuration",
+      "description": "Показывает, сколько ещё длится тайм-аут пользователя, рядом с его сообщениями.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "Sqaaakoi"
+        },
+        {
+          "name": "Palm"
+        }
+      ],
+      "icon": "ClockWarningIcon",
+      "category": "Servers",
+      "upstream": "showTimeoutDuration",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "6c999b1e7bbba9f85b11dce0e1620804601371ea374b58da0e96e9d6aef0d8e3",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-timeout-duration/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-timeout-duration/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/show-timeout-duration/"
+    },
+    {
+      "id": "silent-message-toggle",
+      "name": "SilentMessageToggle",
+      "description": "Кнопка в чате для отправки тихих сообщений без звука и уведомления.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "Nuckyz"
+        },
+        {
+          "name": "CatNoir"
+        }
+      ],
+      "icon": "BellOffIcon",
+      "category": "Chat",
+      "upstream": "silentMessageToggle",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "277b9547d773b2a663dea450feb32c6f701d56a27f44b98232c42c1827dd7b0b",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-message-toggle/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-message-toggle/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/silent-message-toggle/"
+    },
+    {
+      "id": "silent-typing",
+      "name": "SilentTyping",
+      "description": "Скрывает индикатор «печатает…» от других пользователей. Можно выключить на время.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "rini"
+        },
+        {
+          "name": "Im_Banana"
+        }
+      ],
+      "icon": "KeyboardIcon",
+      "category": "Privacy",
+      "upstream": "silentTyping",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "8d2aaeab48e1b275eac777e32b2a1ab81b3f4532db60c5b579233603528b862e",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-typing/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-typing/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/silent-typing/"
+    },
+    {
+      "id": "usrbg",
+      "name": "USRBG",
+      "description": "Показывает баннеры из базы USRBG у пользователей без Nitro.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "AutumnVN"
+        },
+        {
+          "name": "katlyn"
+        },
+        {
+          "name": "pylix"
+        },
+        {
+          "name": "TheKodeToad"
+        }
+      ],
+      "icon": "ImageIcon",
+      "category": "Profiles",
+      "upstream": "usrbg",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": "Перенесено из репозитория USRBG-Allidroid, исходная логика сохранена.",
+      "hash": "c64e96a72d39b4d0217f26dcc86978c236a137d10f0023f4bb41784c40b29ac2",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/usrbg/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/usrbg/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/usrbg/"
+    },
+    {
+      "id": "view-icons",
+      "name": "ViewIcons",
+      "description": "Позволяет открыть аватар и баннер пользователя в полном размере и скопировать ссылки.",
+      "authors": [
+        {
+          "name": "mikhailfur"
+        },
+        {
+          "name": "V"
+        },
+        {
+          "name": "TheKodeToad"
+        },
+        {
+          "name": "Nuckyz"
+        },
+        {
+          "name": "nyx"
+        }
+      ],
+      "icon": "ImageIcon",
+      "category": "Profiles",
+      "upstream": "viewIcons",
+      "status": "ported",
+      "version": "1.0.0",
+      "notes": null,
+      "hash": "c0a1559fc66d9bba5f8d498bf2ab0c20d4a679b5fa64a82edd0a7fe211e62436",
+      "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/",
+      "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/view-icons/"
+    }
+  ]
+}

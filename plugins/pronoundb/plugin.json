@@ -1,0 +1,11 @@
+{
+  "name": "PronounDB",
+  "description": "Показывает местоимения из PronounDB в профилях и сообщениях.",
+  "authors": [{"name": "mikhailfur"}, {"name": "Rosie"}, {"name": "pylix"}],
+  "icon": "AccessibilityIcon",
+  "category": "Profiles",
+  "upstream": "pronounDB",
+  "status": "ported",
+  "version": "1.0.0",
+  "notes": "Данные берутся из публичного API pronoundb.org. Ничего не отправляется без вашего запроса."
+}

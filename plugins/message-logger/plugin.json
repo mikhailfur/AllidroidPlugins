@@ -1,0 +1,11 @@
+{
+  "name": "MessageLogger",
+  "description": "Показывает удалённые и изменённые сообщения до перезапуска приложения. История правок и удалений.",
+  "authors": [{"name": "mikhailfur"}, {"name": "rushii"}, {"name": "V"}, {"name": "AutumnVN"}, {"name": "Nickyux"}, {"name": "Kyuuhachi"}, {"name": "sadan"}, {"name": "f3tch"}, {"name": "Angel~"}, {"name": "kasi"}],
+  "icon": "ChatIcon",
+  "category": "Chat",
+  "upstream": "messageLogger",
+  "status": "ported",
+  "version": "1.0.0",
+  "notes": "Мобильная реализация с логом удалений и правок в строках чата. История живёт до перезапуска Allidroid."
+}

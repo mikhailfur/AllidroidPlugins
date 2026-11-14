@@ -1,0 +1,10 @@
+{
+  "name": "NoBlockedMessages",
+  "description": "Скрывает сообщения заблокированных и игнорируемых пользователей, а также ответы на них.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "zy krah"}, {"name": "Palm"}],
+  "icon": "DenyIcon",
+  "category": "Chat",
+  "upstream": "noBlockedMessages",
+  "status": "ported",
+  "version": "1.0.0"
+}

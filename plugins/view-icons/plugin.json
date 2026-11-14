@@ -1,0 +1,10 @@
+{
+  "name": "ViewIcons",
+  "description": "Позволяет открыть аватар и баннер пользователя в полном размере и скопировать ссылки.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "TheKodeToad"}, {"name": "Nuckyz"}, {"name": "nyx"}],
+  "icon": "ImageIcon",
+  "category": "Profiles",
+  "upstream": "viewIcons",
+  "status": "ported",
+  "version": "1.0.0"
+}

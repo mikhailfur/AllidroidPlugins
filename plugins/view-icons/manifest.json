@@ -1,0 +1,26 @@
+{
+  "name": "ViewIcons",
+  "description": "Позволяет открыть аватар и баннер пользователя в полном размере и скопировать ссылки.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "TheKodeToad"
+    },
+    {
+      "name": "Nuckyz"
+    },
+    {
+      "name": "nyx"
+    }
+  ],
+  "main": "index.js",
+  "hash": "c0a1559fc66d9bba5f8d498bf2ab0c20d4a679b5fa64a82edd0a7fe211e62436",
+  "vendetta": {
+    "icon": "ImageIcon"
+  }
+}

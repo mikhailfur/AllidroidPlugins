@@ -1,0 +1,20 @@
+{
+  "name": "ClearURLs",
+  "description": "Удаляет utm-метки и другие трекеры из ссылок перед отправкой.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "adryd"
+    },
+    {
+      "name": "thororen"
+    }
+  ],
+  "main": "index.js",
+  "hash": "321c3de6f89cc6f06a97748656812f21758c8e7264669c5ea225b30ef9919940",
+  "vendetta": {
+    "icon": "LinkIcon"
+  }
+}

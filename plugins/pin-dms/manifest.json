@@ -1,0 +1,20 @@
+{
+  "name": "PinDMs",
+  "description": "Закрепляет выбранные ЛС вверху списка личных сообщений.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "fres"
+    },
+    {
+      "name": "V"
+    }
+  ],
+  "main": "index.js",
+  "hash": "b86da98f334131363c85f2ec9a9897093c87149cfc7ef873949f67682d85816c",
+  "vendetta": {
+    "icon": "PinIcon"
+  }
+}

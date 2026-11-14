@@ -1,0 +1,26 @@
+{
+  "name": "NoReplyMention",
+  "description": "Отключает пинг автора при ответе на сообщение. Больше случайных упоминаний.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "DustyAngel47"
+    },
+    {
+      "name": "rae"
+    },
+    {
+      "name": "pylix"
+    },
+    {
+      "name": "outfoxxed"
+    }
+  ],
+  "main": "index.js",
+  "hash": "92050a8370392c26f47098edbeef37bcc02872bf7d1c0985b7e7f3ebe4c8d1b2",
+  "vendetta": {
+    "icon": "MentionIcon"
+  }
+}

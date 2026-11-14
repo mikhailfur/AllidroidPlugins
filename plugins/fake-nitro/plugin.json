@@ -1,0 +1,11 @@
+{
+  "name": "FakeNitro",
+  "description": "Позволяет отправлять кастомные эмодзи без Nitro, менять размер эмодзи и включать часть Nitro-тем.",
+  "authors": [{"name": "mikhailfur"}, {"name": "ArjixWasTaken"}, {"name": "D3SOX"}, {"name": "V"}, {"name": "Nuckyz"}, {"name": "AutumnVN"}, {"name": "sadan"}, {"name": "Palm"}],
+  "icon": "NitroWheelIcon",
+  "category": "Emotes",
+  "upstream": "fakeNitro",
+  "status": "ported",
+  "version": "1.0.0",
+  "notes": "Эмодзи отправляются как ссылки и превращаются в картинки на клиенте. Часть Nitro-функций (темы, иконки приложения) зависит от версии Discord."
+}

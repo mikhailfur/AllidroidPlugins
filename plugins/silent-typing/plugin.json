@@ -1,0 +1,10 @@
+{
+  "name": "SilentTyping",
+  "description": "Скрывает индикатор «печатает…» от других пользователей. Можно выключить на время.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "rini"}, {"name": "Im_Banana"}],
+  "icon": "KeyboardIcon",
+  "category": "Privacy",
+  "upstream": "silentTyping",
+  "status": "ported",
+  "version": "1.0.0"
+}

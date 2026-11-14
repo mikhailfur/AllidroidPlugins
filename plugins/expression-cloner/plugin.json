@@ -1,0 +1,11 @@
+{
+  "name": "ExpressionCloner",
+  "description": "Клонирует кастомные эмодзи на сервер, где у вас есть право управлять эмодзи.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "Nuckyz"}, {"name": "Amelia"}, {"name": "sadan"}, {"name": "fierdetta"}],
+  "icon": "EmojiIcon",
+  "category": "Emotes",
+  "upstream": "expressionCloner",
+  "status": "ported",
+  "version": "1.0.0",
+  "notes": "Клонирование эмодзи. Клонирование стикеров появится позже."
+}

@@ -1,0 +1,47 @@
+name: Track Vencord upstream
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sync upstream metadata
+        id: sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-upstream.mjs
+
+      - name: Commit upstream report
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add upstream.json
+          git commit -m "chore: sync Vencord upstream [skip build]" || true
+          git push || true
+
+      - name: Open issue when plugin list changes
+        if: steps.sync.outputs.changed == 'true' && (steps.sync.outputs.added != '' || steps.sync.outputs.removed != '')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BODY=$(printf 'Vencord upstream changed.\n\nCommit: %s\n\nAdded: %s\n\nRemoved: %s\n\nReview the roadmap and port new plugins if they fit.\n' "${{ steps.sync.outputs.commit }}" "${{ steps.sync.outputs.added }}" "${{ steps.sync.outputs.removed }}")
+          gh issue create --title "Upstream Vencord changed" --body "$BODY" --label "upstream" || true

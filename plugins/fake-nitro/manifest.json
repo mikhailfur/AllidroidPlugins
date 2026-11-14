@@ -1,0 +1,35 @@
+{
+  "name": "FakeNitro",
+  "description": "Позволяет отправлять кастомные эмодзи без Nitro, менять размер эмодзи и включать часть Nitro-тем.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "ArjixWasTaken"
+    },
+    {
+      "name": "D3SOX"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "Nuckyz"
+    },
+    {
+      "name": "AutumnVN"
+    },
+    {
+      "name": "sadan"
+    },
+    {
+      "name": "Palm"
+    }
+  ],
+  "main": "index.js",
+  "hash": "eeea3c62b76f460efe964fb27f25fdccaa15ff2b93da579eaaf588032969aba7",
+  "vendetta": {
+    "icon": "NitroWheelIcon"
+  }
+}

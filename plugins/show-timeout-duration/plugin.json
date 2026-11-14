@@ -1,0 +1,10 @@
+{
+  "name": "ShowTimeoutDuration",
+  "description": "Показывает, сколько ещё длится тайм-аут пользователя, рядом с его сообщениями.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "Sqaaakoi"}, {"name": "Palm"}],
+  "icon": "ClockWarningIcon",
+  "category": "Servers",
+  "upstream": "showTimeoutDuration",
+  "status": "ported",
+  "version": "1.0.0"
+}

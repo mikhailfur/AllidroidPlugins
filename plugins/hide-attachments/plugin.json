@@ -1,0 +1,10 @@
+{
+  "name": "HideAttachments",
+  "description": "Скрывает вложения и эмбеды у отдельных сообщений через долгое нажатие. Включается и выключается на каждом сообщении.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "c0nnorgg"}],
+  "icon": "ImageInvisibleIcon",
+  "category": "Chat",
+  "upstream": "hideAttachments",
+  "status": "ported",
+  "version": "1.0.0"
+}

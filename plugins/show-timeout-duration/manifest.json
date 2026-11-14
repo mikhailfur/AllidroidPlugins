@@ -1,0 +1,23 @@
+{
+  "name": "ShowTimeoutDuration",
+  "description": "Показывает, сколько ещё длится тайм-аут пользователя, рядом с его сообщениями.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "Sqaaakoi"
+    },
+    {
+      "name": "Palm"
+    }
+  ],
+  "main": "index.js",
+  "hash": "6c999b1e7bbba9f85b11dce0e1620804601371ea374b58da0e96e9d6aef0d8e3",
+  "vendetta": {
+    "icon": "ClockWarningIcon"
+  }
+}

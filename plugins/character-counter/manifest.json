@@ -1,0 +1,20 @@
+{
+  "name": "CharacterCounter",
+  "description": "Показывает количество символов в поле чата и лимит, с жёлтым/красным цветом ближе к пределу.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "thororen"
+    },
+    {
+      "name": "creations"
+    }
+  ],
+  "main": "index.js",
+  "hash": "41a7559d7dd083190be604c29fc97008b4e9e062006b935f93553bc1e20175e5",
+  "vendetta": {
+    "icon": "TextIcon"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "PronounDB",
+  "description": "Показывает местоимения из PronounDB в профилях и сообщениях.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "Rosie"
+    },
+    {
+      "name": "pylix"
+    }
+  ],
+  "main": "index.js",
+  "hash": "4c478d769802b1ca1649369864e243e4820a81cc85bd287ff51bf48a9e53f043",
+  "vendetta": {
+    "icon": "AccessibilityIcon"
+  }
+}

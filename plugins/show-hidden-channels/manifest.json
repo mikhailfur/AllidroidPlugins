@@ -1,0 +1,20 @@
+{
+  "name": "ShowHiddenChannels",
+  "description": "Показывает скрытые каналы: название, тему, дату создания, последнее сообщение и пины.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "c10udburst"
+    }
+  ],
+  "main": "index.js",
+  "hash": "c33263f066639fcbbdd41670bce6a552e72afb1495c296e84baad94c399eb992",
+  "vendetta": {
+    "icon": "EyeIcon"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ShowHiddenChannels",
+  "description": "Показывает скрытые каналы: название, тему, дату создания, последнее сообщение и пины.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "c10udburst"}],
+  "icon": "EyeIcon",
+  "category": "Servers",
+  "upstream": "showHiddenChannels",
+  "status": "ported",
+  "version": "1.0.0",
+  "notes": "Открывает канал в режиме «только просмотр»: сообщения не подгружаются, история не раскрывается."
+}

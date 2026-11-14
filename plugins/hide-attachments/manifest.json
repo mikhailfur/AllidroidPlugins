@@ -1,0 +1,20 @@
+{
+  "name": "HideAttachments",
+  "description": "Скрывает вложения и эмбеды у отдельных сообщений через долгое нажатие. Включается и выключается на каждом сообщении.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "c0nnorgg"
+    }
+  ],
+  "main": "index.js",
+  "hash": "acb9b51e760d8ced2e2e4c2a6afe851d6f02daf3905166a710be0a0ef9d1cfa1",
+  "vendetta": {
+    "icon": "ImageInvisibleIcon"
+  }
+}

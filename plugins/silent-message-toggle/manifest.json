@@ -1,0 +1,20 @@
+{
+  "name": "SilentMessageToggle",
+  "description": "Кнопка в чате для отправки тихих сообщений без звука и уведомления.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "Nuckyz"
+    },
+    {
+      "name": "CatNoir"
+    }
+  ],
+  "main": "index.js",
+  "hash": "277b9547d773b2a663dea450feb32c6f701d56a27f44b98232c42c1827dd7b0b",
+  "vendetta": {
+    "icon": "BellOffIcon"
+  }
+}

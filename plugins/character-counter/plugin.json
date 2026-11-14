@@ -1,0 +1,10 @@
+{
+  "name": "CharacterCounter",
+  "description": "Показывает количество символов в поле чата и лимит, с жёлтым/красным цветом ближе к пределу.",
+  "authors": [{"name": "mikhailfur"}, {"name": "thororen"}, {"name": "creations"}],
+  "icon": "TextIcon",
+  "category": "Chat",
+  "upstream": "characterCounter",
+  "status": "ported",
+  "version": "1.0.0"
+}

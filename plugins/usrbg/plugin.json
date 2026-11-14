@@ -1,0 +1,11 @@
+{
+  "name": "USRBG",
+  "description": "Показывает баннеры из базы USRBG у пользователей без Nitro.",
+  "authors": [{"name": "mikhailfur"}, {"name": "AutumnVN"}, {"name": "katlyn"}, {"name": "pylix"}, {"name": "TheKodeToad"}],
+  "icon": "ImageIcon",
+  "category": "Profiles",
+  "upstream": "usrbg",
+  "status": "ported",
+  "version": "1.0.0",
+  "notes": "Перенесено из репозитория USRBG-Allidroid, исходная логика сохранена."
+}

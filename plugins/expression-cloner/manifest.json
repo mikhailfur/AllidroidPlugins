@@ -1,0 +1,29 @@
+{
+  "name": "ExpressionCloner",
+  "description": "Клонирует кастомные эмодзи на сервер, где у вас есть право управлять эмодзи.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "Nuckyz"
+    },
+    {
+      "name": "Amelia"
+    },
+    {
+      "name": "sadan"
+    },
+    {
+      "name": "fierdetta"
+    }
+  ],
+  "main": "index.js",
+  "hash": "c5c39870be4b653d4ee69e3e3dadd5b7578b72e70ff31a17e141209f09ca4107",
+  "vendetta": {
+    "icon": "EmojiIcon"
+  }
+}

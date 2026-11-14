@@ -1,0 +1,17 @@
+{
+  "name": "FileSizeOnPicker",
+  "description": "Показывает размер файла прямо на превью в медиа-пикере.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "MSMA"
+    }
+  ],
+  "main": "index.js",
+  "hash": "97e30454d8da36220f0e2b6cb87a4f8b6fbf0c6b2a1b65098befe6701c22754e",
+  "vendetta": {
+    "icon": "FileIcon"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ReadAllNotificationsButton",
+  "description": "Кнопка «Прочитать всё»: отмечает все непрочитанные серверные каналы прочитанными одним нажатием.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "kemo"
+    },
+    {
+      "name": "V"
+    }
+  ],
+  "main": "index.js",
+  "hash": "cb01eea07b6d39a51677b61da7d8b50c63d87374aec09313e5a5fe8b6e716a13",
+  "vendetta": {
+    "icon": "CheckmarkIcon"
+  }
+}

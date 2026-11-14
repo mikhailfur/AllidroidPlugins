@@ -1,0 +1,20 @@
+{
+  "name": "CopyEmojiMarkdown",
+  "description": "Добавляет «Скопировать markdown эмодзи» в меню эмодзи: <:name:id> или <a:name:id>.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "HappyEnderman"
+    },
+    {
+      "name": "Vishnya"
+    }
+  ],
+  "main": "index.js",
+  "hash": "21fef39f63d00f864477a2d18093bb43b9ed024940c6765d388ee9d4084bdf8d",
+  "vendetta": {
+    "icon": "CopyIcon"
+  }
+}

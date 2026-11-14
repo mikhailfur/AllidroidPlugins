@@ -1,0 +1,11 @@
+{
+  "name": "PlatformIndicators",
+  "description": "Показывает значки платформ (ПК, веб, мобильный, VR) рядом с именами и в профилях.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "MSMA"}],
+  "icon": "DesktopIcon",
+  "category": "Profiles",
+  "upstream": "platformIndicators",
+  "status": "ported",
+  "version": "1.0.0",
+  "notes": "Платформы берутся из PresenceStore и SessionsStore. Цвет значка соответствует статусу."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "BetterSearch",
+  "description": "Улучшает поиск сообщений: номер страницы можно менять нажатием, без прокрутки всего списка.",
+  "authors": [{"name": "mikhailfur"}, {"name": "fres"}, {"name": "V"}],
+  "icon": "SearchIcon",
+  "category": "Chat",
+  "upstream": "betterSearch",
+  "status": "ported",
+  "version": "1.0.0"
+}

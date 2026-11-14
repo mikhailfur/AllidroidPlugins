@@ -1,0 +1,11 @@
+{
+  "name": "ReviewDB",
+  "description": "Отзывы на профили пользователей: чтение, добавление и удаление своих отзывов.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "mantikafasi"}, {"name": "Fiery"}],
+  "icon": "StarIcon",
+  "category": "Profiles",
+  "upstream": "reviewDB",
+  "status": "ported",
+  "version": "1.0.0",
+  "notes": "Использует официальный API ReviewDB. Для отправки отзывов нужна авторизация через Discord OAuth."
+}

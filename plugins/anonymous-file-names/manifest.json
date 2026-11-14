@@ -1,0 +1,23 @@
+{
+  "name": "AnonymousFileNames",
+  "description": "Случайные имена для загружаемых файлов. Полезно, когда имя файла слишком личное.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "k1ng_op"
+    },
+    {
+      "name": "siguma"
+    },
+    {
+      "name": "Palm"
+    }
+  ],
+  "main": "index.js",
+  "hash": "a59ecf39d663a9fe3ca0f2ec2f8902db0edab32f3da5a853e5b6b137e0dff7c2",
+  "vendetta": {
+    "icon": "UnknownGameIcon"
+  }
+}

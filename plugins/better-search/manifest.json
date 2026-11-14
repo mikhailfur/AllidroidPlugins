@@ -1,0 +1,20 @@
+{
+  "name": "BetterSearch",
+  "description": "Улучшает поиск сообщений: номер страницы можно менять нажатием, без прокрутки всего списка.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "fres"
+    },
+    {
+      "name": "V"
+    }
+  ],
+  "main": "index.js",
+  "hash": "0d865ad370cad5fec8db20ee5ff657bab7bf441026780eea3748a0d8c1303f8f",
+  "vendetta": {
+    "icon": "SearchIcon"
+  }
+}

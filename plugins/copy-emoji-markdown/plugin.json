@@ -1,0 +1,10 @@
+{
+  "name": "CopyEmojiMarkdown",
+  "description": "Добавляет «Скопировать markdown эмодзи» в меню эмодзи: <:name:id> или <a:name:id>.",
+  "authors": [{"name": "mikhailfur"}, {"name": "HappyEnderman"}, {"name": "Vishnya"}],
+  "icon": "CopyIcon",
+  "category": "Emotes",
+  "upstream": "copyEmojiMarkdown",
+  "status": "ported",
+  "version": "1.0.0"
+}

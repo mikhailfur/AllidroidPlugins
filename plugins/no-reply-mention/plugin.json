@@ -1,0 +1,10 @@
+{
+  "name": "NoReplyMention",
+  "description": "Отключает пинг автора при ответе на сообщение. Больше случайных упоминаний.",
+  "authors": [{"name": "mikhailfur"}, {"name": "DustyAngel47"}, {"name": "rae"}, {"name": "pylix"}, {"name": "outfoxxed"}],
+  "icon": "MentionIcon",
+  "category": "Notifications",
+  "upstream": "noReplyMention",
+  "status": "ported",
+  "version": "1.0.0"
+}

@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AllidroidPlugins — Roadmap</title>
+<meta name="description" content="30 Vencord plugins ported to Allidroid. Interactive roadmap with raw and jsDelivr install links.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-2: #10131b;
+    --card: rgba(24, 27, 37, .78);
+    --card-2: rgba(31, 35, 48, .9);
+    --line: rgba(255, 255, 255, .08);
+    --line-strong: rgba(255, 255, 255, .16);
+    --text: #eef1f8;
+    --muted: #9aa3b5;
+    --blurple: #5865f2;
+    --green: #2ecc71;
+    --yellow: #f0b232;
+    --red: #f23f43;
+    --pink: #eb459e;
+    --cyan: #56c8f5;
+    --shadow: 0 24px 80px rgba(0,0,0,.45);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(1200px 700px at 8% -10%, rgba(88,101,242,.28), transparent 60%),
+      radial-gradient(900px 600px at 100% 0%, rgba(235,69,158,.16), transparent 55%),
+      radial-gradient(700px 500px at 50% 100%, rgba(86,200,245,.10), transparent 60%),
+      var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size: 54px 54px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,.65), transparent 80%);
+    z-index: 0;
+  }
+
+  a { color: inherit; }
+  button, input { font: inherit; }
+
+  .shell { position: relative; z-index: 1; max-width: 1240px; margin: 0 auto; padding: 34px 20px 90px; }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    gap: 26px;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  .hero-main {
+    position: relative;
+    overflow: hidden;
+    padding: 34px;
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    background: linear-gradient(135deg, rgba(88,101,242,.18), rgba(24,27,37,.7) 42%, rgba(235,69,158,.10));
+    box-shadow: var(--shadow);
+  }
+
+  .hero-main::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    right: -120px;
+    top: -160px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(88,101,242,.55), transparent 70%);
+    filter: blur(10px);
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    padding: 7px 11px;
+    border: 1px solid rgba(88,101,242,.35);
+    border-radius: 999px;
+    color: #c8ceff;
+    background: rgba(88,101,242,.12);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px rgba(46,204,113,.12); }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(36px, 6vw, 68px);
+    line-height: .98;
+    letter-spacing: -.055em;
+    font-weight: 800;
+  }
+
+  h1 .grad {
+    background: linear-gradient(90deg, #fff 10%, #b9c1ff 45%, #ff9bd4 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .lead {
+    max-width: 680px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 42px;
+    padding: 0 16px;
+    border: 1px solid var(--line-strong);
+    border-radius: 12px;
+    color: var(--text);
+    background: rgba(255,255,255,.05);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform .16s ease, background .16s ease, border-color .16s ease;
+  }
+
+  .btn:hover { transform: translateY(-1px); background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.28); }
+  .btn.primary { background: linear-gradient(135deg, #5865f2, #7a5cf0); border-color: transparent; box-shadow: 0 10px 30px rgba(88,101,242,.35); }
+  .btn.primary:hover { background: linear-gradient(135deg, #6572ff, #8a6cff); }
+
+  .hero-stats {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 14px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    background: var(--card);
+    backdrop-filter: blur(18px);
+    box-shadow: var(--shadow);
+  }
+
+  .ring-wrap { display: flex; align-items: center; gap: 18px; }
+  .ring {
+    --p: 80;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background: conic-gradient(var(--green) calc(var(--p) * 1%), rgba(255,255,255,.08) 0);
+    display: grid;
+    place-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  .ring::before { content: ""; position: absolute; inset: 9px; border-radius: 50%; background: #12151e; }
+  .ring span { position: relative; font-size: 24px; font-weight: 800; }
+  .ring small { display: block; color: var(--muted); font-size: 10px; font-weight: 600; text-align: center; letter-spacing: .08em; text-transform: uppercase; }
+
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .stat { padding: 10px 12px; border: 1px solid var(--line); border-radius: 13px; background: rgba(255,255,255,.035); }
+  .stat b { display: block; font-size: 20px; line-height: 1.1; }
+  .stat span { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .07em; }
+  .stat.green b { color: var(--green); }
+  .stat.yellow b { color: var(--yellow); }
+  .stat.red b { color: var(--red); }
+  .stat.grey b { color: #aab2c5; }
+  .stat.pink b { color: var(--pink); }
+
+  .toolbar {
+    position: sticky;
+    top: 12px;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 0 0 24px;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgba(11,13,18,.8);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+  }
+
+  .search {
+    position: relative;
+    flex: 1 1 280px;
+    min-width: 220px;
+  }
+  .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); }
+  .search input {
+    width: 100%;
+    height: 42px;
+    padding: 0 14px 0 40px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    outline: none;
+    color: var(--text);
+    background: rgba(255,255,255,.04);
+  }
+  .search input:focus { border-color: rgba(88,101,242,.65); box-shadow: 0 0 0 4px rgba(88,101,242,.12); }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+  .chip {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    color: var(--muted);
+    background: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    transition: .16s ease;
+  }
+  .chip:hover { color: var(--text); background: rgba(255,255,255,.05); }
+  .chip.active { color: #fff; border-color: rgba(88,101,242,.7); background: rgba(88,101,242,.24); }
+  .chip .count { margin-left: 5px; opacity: .7; font-weight: 600; }
+
+  .section-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin: 30px 0 14px; }
+  .section-head h2 { margin: 0; font-size: 24px; letter-spacing: -.03em; }
+  .section-head p { margin: 0; color: var(--muted); font-size: 13px; }
+
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 190px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(32,36,49,.82), rgba(20,23,32,.82));
+    box-shadow: 0 14px 40px rgba(0,0,0,.22);
+    overflow: hidden;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    animation: rise .45s ease both;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent, var(--blurple)), transparent);
+    opacity: .65;
+  }
+  .card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,.18); box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+  .card.top { background: linear-gradient(180deg, rgba(39,43,63,.9), rgba(20,23,32,.86)); }
+  .card.dim { opacity: .78; }
+
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+  .card-top { display: flex; align-items: flex-start; gap: 12px; }
+  .rank {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    background: rgba(255,255,255,.04);
+    color: #cbd2e6;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .card.top .rank { color: #fff; border-color: rgba(88,101,242,.55); background: rgba(88,101,242,.2); }
+
+  .title-wrap { min-width: 0; flex: 1; }
+  .card h3 { margin: 3px 0 0; font-size: 17px; letter-spacing: -.015em; }
+  .sub { margin: 6px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+  .note { margin: 0; color: #c5cbe0; font-size: 12.5px; line-height: 1.55; }
+  .reason { margin: 0; padding: 10px 12px; border: 1px dashed rgba(255,255,255,.12); border-radius: 12px; color: #b7bfd2; background: rgba(255,255,255,.025); font-size: 12.5px; line-height: 1.55; }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.04);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .status.ported { color: #7df3a8; border-color: rgba(46,204,113,.35); background: rgba(46,204,113,.11); }
+  .status.beta { color: #ffd36a; border-color: rgba(240,178,50,.4); background: rgba(240,178,50,.1); }
+  .status.bonus { color: #ffa8de; border-color: rgba(235,69,158,.4); background: rgba(235,69,158,.1); }
+  .status.builtin { color: #c3c9d9; border-color: rgba(255,255,255,.16); background: rgba(255,255,255,.05); }
+  .status.not-portable { color: #ff9a9c; border-color: rgba(242,63,67,.4); background: rgba(242,63,67,.1); }
+  .status.planned { color: #8edcff; border-color: rgba(86,200,245,.4); background: rgba(86,200,245,.1); }
+
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px; color: #aeb6c9; background: rgba(255,255,255,.03); font-size: 10.5px; font-weight: 600; }
+
+  .install { margin-top: auto; display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+  .install .btn { min-height: 34px; padding: 0 10px; font-size: 11.5px; border-radius: 9px; }
+  .install .btn.raw { color: #c9d0ff; border-color: rgba(88,101,242,.35); background: rgba(88,101,242,.1); }
+  .install .btn.jsd { color: #ffd1ef; border-color: rgba(235,69,158,.35); background: rgba(235,69,158,.1); }
+  .hash { margin-left: auto; color: #6f788c; font-family: "JetBrains Mono", monospace; font-size: 10px; }
+
+  .empty { grid-column: 1 / -1; padding: 44px 18px; text-align: center; color: var(--muted); border: 1px dashed var(--line-strong); border-radius: 18px; }
+
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: 26px;
+    z-index: 50;
+    transform: translate(-50%, 20px);
+    padding: 11px 15px;
+    border: 1px solid rgba(46,204,113,.35);
+    border-radius: 12px;
+    color: #d9ffe8;
+    background: rgba(20,32,26,.92);
+    box-shadow: 0 16px 50px rgba(0,0,0,.4);
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease;
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.7; }
+  footer a { color: #c8ceff; }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: 1fr; }
+    .ring-wrap { justify-content: flex-start; }
+  }
+  @media (max-width: 700px) {
+    .shell { padding: 18px 12px 70px; }
+    .hero-main { padding: 24px; border-radius: 20px; }
+    .hero-stats { border-radius: 20px; }
+    .grid { grid-template-columns: 1fr; }
+    .toolbar { top: 6px; border-radius: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <section class="hero">
+    <div class="hero-main">
+      <div class="eyebrow"><span class="dot"></span> 30 plugins · raw + jsDelivr · auto-update</div>
+      <h1><span class="grad">Vencord → Allidroid</span><br>Roadmap</h1>
+      <p class="lead">
+        Мобильные порты самых используемых плагинов Vencord. User plugins ставятся по ссылке,
+        обновляются по <code>manifest.json</code> + <code>hash</code> и не требуют пересборки APK.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://github.com/mikhailfur/AllidroidPlugins" target="_blank" rel="noreferrer">GitHub репозиторий</a>
+        <a class="btn" href="https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins.json" target="_blank" rel="noreferrer">plugins.json</a>
+        <a class="btn" href="https://github.com/FlibatsUniverse/Allidroid" target="_blank" rel="noreferrer">Allidroid</a>
+      </div>
+    </div>
+
+    <aside class="hero-stats">
+      <div class="ring-wrap">
+        <div class="ring" id="ring" style="--p: 80"><span id="ring-value">80%</span></div>
+        <div>
+          <div style="font-size: 13px; color: var(--muted); line-height: 1.5">
+            <b id="ported-count" style="color: var(--green); font-size: 26px">24</b> / 30<br>
+            топ-плагинов уже портированы
+          </div>
+        </div>
+      </div>
+      <div class="stat-grid">
+        <div class="stat green"><b id="st-ported">24</b><span>ported</span></div>
+        <div class="stat yellow"><b id="st-beta">1</b><span>beta</span></div>
+        <div class="stat grey"><b id="st-builtin">3</b><span>built-in</span></div>
+        <div class="stat red"><b id="st-nope">3</b><span>not portable</span></div>
+        <div class="stat pink"><b id="st-bonus">6</b><span>bonus</span></div>
+        <div class="stat"><b id="st-planned">8</b><span>planned</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <div class="toolbar">
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search" type="search" placeholder="Поиск по названию, категории, описанию…" autocomplete="off">
+    </label>
+    <div class="chips" id="filters">
+      <button class="chip active" data-filter="all">Все <span class="count" data-count="all"></span></button>
+      <button class="chip" data-filter="ported">Ported <span class="count" data-count="ported"></span></button>
+      <button class="chip" data-filter="beta">Beta <span class="count" data-count="beta"></span></button>
+      <button class="chip" data-filter="bonus">Bonus <span class="count" data-count="bonus"></span></button>
+      <button class="chip" data-filter="builtin">Built-in <span class="count" data-count="builtin"></span></button>
+      <button class="chip" data-filter="planned">Planned <span class="count" data-count="planned"></span></button>
+      <button class="chip" data-filter="not-portable">Not portable <span class="count" data-count="not-portable"></span></button>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <div>
+      <h2>Топ-30 Vencord</h2>
+      <p>Сводный рейтинг: дефолтные плагины, гайды и популярность мобильных портов.</p>
+    </div>
+    <p id="visible-count">0 из 0</p>
+  </div>
+  <div class="grid" id="top-grid"></div>
+
+  <div class="section-head">
+    <div>
+      <h2>Все плагины и планы</h2>
+      <p>Порты, бонусы, встроенные функции Allidroid и то, что пока не переносится.</p>
+    </div>
+  </div>
+  <div class="grid" id="all-grid"></div>
+
+  <footer>
+    <p>
+      Данные: <a href="https://github.com/mikhailfur/AllidroidPlugins/blob/main/roadmap.json">roadmap.json</a> и
+      <a href="https://github.com/mikhailfur/AllidroidPlugins/blob/main/plugins.json">plugins.json</a>.
+      Оригиналы — <a href="https://github.com/Vendicated/Vencord">Vencord</a>, мобильные референсы — Vendetta / Revenge / Bunny.
+      Лицензия GPL-3.0-or-later.
+    </p>
+  </footer>
+</div>
+
+<div class="toast" id="toast">Скопировано</div>
+
+<script>
+  const STATUS = {
+    ported: { label: "Ported", cls: "ported", accent: "#2ecc71" },
+    beta: { label: "Beta", cls: "beta", accent: "#f0b232" },
+    bonus: { label: "Bonus", cls: "bonus", accent: "#eb459e" },
+    builtin: { label: "Built-in", cls: "builtin", accent: "#8b949e" },
+    "not-portable": { label: "Not portable", cls: "not-portable", accent: "#f23f43" },
+    planned: { label: "Planned", cls: "planned", accent: "#56c8f5" }
+  };
+
+  let roadmap = { top30: [], items: [] };
+  let plugins = [];
+  let filter = "all";
+  let query = "";
+
+  const $ = (id) => document.getElementById(id);
+  const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const normalize = (value) => String(value ?? "").toLowerCase();
+
+  function byPluginId() {
+    return Object.fromEntries(plugins.map((p) => [p.id, p]));
+  }
+
+  function mergedItems() {
+    const built = byPluginId();
+    const seen = new Set();
+    const result = [];
+
+    for (const top of roadmap.top30 || []) {
+      const plugin = top.pluginId ? built[top.pluginId] : null;
+      result.push({
+        ...plugin,
+        ...top,
+        rank: top.rank,
+        top: true,
+        description: plugin?.description ?? top.description ?? "",
+        authors: plugin?.authors ?? [],
+        install: top.install ?? (plugin ? { raw: plugin.raw, jsdelivr: plugin.jsdelivr, stable: plugin.stable } : null),
+        hash: top.hash ?? plugin?.hash,
+        key: "top-" + top.rank
+      });
+      if (top.pluginId) seen.add(top.pluginId);
+    }
+
+    const topNames = new Set((roadmap.top30 || []).map((entry) => entry.name));
+
+    for (const item of roadmap.items || []) {
+      if (item.pluginId && seen.has(item.pluginId)) continue;
+      if (!item.pluginId && topNames.has(item.name)) continue;
+      const plugin = item.pluginId ? built[item.pluginId] : null;
+      result.push({
+        ...plugin,
+        ...item,
+        top: false,
+        description: plugin?.description ?? item.description ?? "",
+        authors: plugin?.authors ?? [],
+        install: item.install ?? (plugin ? { raw: plugin.raw, jsdelivr: plugin.jsdelivr, stable: plugin.stable } : null),
+        hash: item.hash ?? plugin?.hash,
+        key: "item-" + item.id
+      });
+    }
+
+    return result;
+  }
+
+  function matches(item) {
+    if (filter !== "all" && item.status !== filter) return false;
+    if (!query) return true;
+    const haystack = [
+      item.name, item.upstream, item.category, item.description, item.note, item.reason,
+      ...(item.authors || []).map((author) => author.name)
+    ].join(" ").toLowerCase();
+    return haystack.includes(query);
+  }
+
+  function installButtons(item) {
+    if (!item.install?.raw) {
+      return `<span class="tag">установка не требуется</span>`;
+    }
+    const short = item.hash ? item.hash.slice(0, 10) : "";
+    return `
+      <div class="install">
+        <button class="btn raw" data-copy="${esc(item.install.raw)}">raw</button>
+        <button class="btn jsd" data-copy="${esc(item.install.jsdelivr)}">jsDelivr</button>
+        <a class="btn" href="${esc(item.install.raw.replace("raw.githubusercontent.com", "github.com").replace("/main/", "/blob/main/"))}" target="_blank" rel="noreferrer" title="Открыть папку плагина">↗</a>
+        ${short ? `<span class="hash">#${esc(short)}</span>` : ""}
+      </div>
+    `;
+  }
+
+  function card(item, index) {
+    const status = STATUS[item.status] || STATUS.planned;
+    const rank = item.rank ? `<div class="rank">#${String(item.rank).padStart(2, "0")}</div>` : "";
+    const note = item.note ? `<p class="note">${esc(item.note)}</p>` : "";
+    const reason = item.reason ? `<p class="reason">${esc(item.reason)}</p>` : "";
+    const tags = [
+      item.category ? `<span class="tag">${esc(item.category)}</span>` : "",
+      item.upstream && item.upstream !== "bonus" ? `<span class="tag">${esc(item.upstream)}</span>` : "",
+      ...(item.authors || []).slice(0, 2).map((author) => `<span class="tag">${esc(author.name)}</span>`)
+    ].filter(Boolean).join("");
+
+    return `
+      <article class="card ${item.top ? "top" : ""} ${item.status === "not-portable" || item.status === "builtin" ? "dim" : ""}" style="--accent:${status.accent}; animation-delay:${Math.min(index * 18, 250)}ms">
+        <div class="card-top">
+          ${rank}
+          <div class="title-wrap">
+            <span class="status ${status.cls}">${status.label}</span>
+            <h3>${esc(item.name)}</h3>
+            <p class="sub">${esc(item.description || "")}</p>
+          </div>
+        </div>
+        ${note}
+        ${reason}
+        <div class="meta">${tags}</div>
+        ${installButtons(item)}
+      </article>
+    `;
+  }
+
+  function render() {
+    const items = mergedItems();
+    const filtered = items.filter(matches);
+
+    const top = filtered.filter((item) => item.top).sort((a, b) => a.rank - b.rank);
+    const rest = filtered.filter((item) => !item.top);
+
+    $("top-grid").innerHTML = top.length ? top.map(card).join("") : `<div class="empty">Ничего не найдено. Попробуйте другой запрос.</div>`;
+    $("all-grid").innerHTML = rest.length ? rest.map(card).join("") : `<div class="empty">Ничего не найдено. Попробуйте другой запрос.</div>`;
+    $("visible-count").textContent = `${filtered.length} из ${items.length}`;
+
+    const counts = items.reduce((acc, item) => {
+      acc.all++;
+      acc[item.status] = (acc[item.status] || 0) + 1;
+      return acc;
+    }, { all: 0 });
+
+    document.querySelectorAll("[data-count]").forEach((node) => {
+      node.textContent = counts[node.dataset.count] ?? 0;
+    });
+
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(button.dataset.copy);
+          showToast("Ссылка скопирована");
+        } catch {
+          showToast("Не удалось скопировать");
+        }
+      });
+    });
+
+    const topItems = items.filter((item) => item.top);
+    const ported = topItems.filter((item) => item.status === "ported" || item.status === "beta").length;
+    const percent = Math.round((ported / Math.max(1, topItems.length)) * 100);
+    const ring = $("ring");
+    if (ring) {
+      ring.style.setProperty("--p", percent);
+      $("ring-value").textContent = percent + "%";
+      $("ported-count").textContent = ported;
+    }
+
+    $("st-ported").textContent = counts.ported ?? 0;
+    $("st-beta").textContent = counts.beta ?? 0;
+    $("st-builtin").textContent = counts.builtin ?? 0;
+    $("st-nope").textContent = counts["not-portable"] ?? 0;
+    $("st-bonus").textContent = counts.bonus ?? 0;
+    $("st-planned").textContent = counts.planned ?? 0;
+  }
+
+  function showToast(text) {
+    const node = $("toast");
+    node.textContent = text;
+    node.classList.add("show");
+    clearTimeout(showToast.timer);
+    showToast.timer = setTimeout(() => node.classList.remove("show"), 1800);
+  }
+
+  $("search").addEventListener("input", (event) => {
+    query = normalize(event.target.value.trim());
+    render();
+  });
+
+  $("filters").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-filter]");
+    if (!button) return;
+    filter = button.dataset.filter;
+    document.querySelectorAll("[data-filter]").forEach((node) => node.classList.toggle("active", node === button));
+    render();
+  });
+
+  Promise.all([
+    fetch("./roadmap.json", { cache: "no-store" }).then((response) => response.json()),
+    fetch("./plugins.json", { cache: "no-store" }).then((response) => response.ok ? response.json() : { plugins: [] }).catch(() => ({ plugins: [] }))
+  ]).then(([roadmapData, pluginsData]) => {
+    roadmap = roadmapData;
+    plugins = pluginsData.plugins || [];
+    render();
+  }).catch((error) => {
+    console.error(error);
+    $("top-grid").innerHTML = `<div class="empty">Не удалось загрузить roadmap.json. Откройте страницу через GitHub Pages.</div>`;
+  });
+</script>
+</body>
+</html>

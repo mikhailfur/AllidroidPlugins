@@ -1,0 +1,14 @@
+{
+  "name": "MoveAllVoice",
+  "description": "Долгое нажатие на голосовой канал: перенести всех участников в другой голосовой канал.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    }
+  ],
+  "main": "index.js",
+  "hash": "91867985746129962464d1f76fd7641598f3ae9492433ba424b3248645784ee8",
+  "vendetta": {
+    "icon": "VoiceNormalIcon"
+  }
+}

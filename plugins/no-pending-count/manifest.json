@@ -1,0 +1,17 @@
+{
+  "name": "NoPendingCount",
+  "description": "Убирает красный счётчик входящих заявок в друзья и запросов сообщений.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "amia"
+    }
+  ],
+  "main": "index.js",
+  "hash": "a3692a4bfbadc029c1409c92cbee1a0cb5a9e86dbabd2b8569631a7663788645",
+  "vendetta": {
+    "icon": "FriendsIcon"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "NoBlockedMessages",
+  "description": "Скрывает сообщения заблокированных и игнорируемых пользователей, а также ответы на них.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "zy krah"
+    },
+    {
+      "name": "Palm"
+    }
+  ],
+  "main": "index.js",
+  "hash": "5ed9a515b9ea44c86ac248de2ab0f488da0a39649c68b644e4644f33fb0eba72",
+  "vendetta": {
+    "icon": "DenyIcon"
+  }
+}

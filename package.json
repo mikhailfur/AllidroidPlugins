@@ -1,0 +1,17 @@
+{
+  "name": "allidroid-plugins",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Vencord plugins ported to Allidroid",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:one": "node scripts/build.mjs --only",
+    "index": "node scripts/gen-index.mjs",
+    "upstream": "node scripts/sync-upstream.mjs",
+    "check": "node scripts/build.mjs --check"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "SilentMessageToggle",
+  "description": "Кнопка в чате для отправки тихих сообщений без звука и уведомления.",
+  "authors": [{"name": "mikhailfur"}, {"name": "Nuckyz"}, {"name": "CatNoir"}],
+  "icon": "BellOffIcon",
+  "category": "Chat",
+  "upstream": "silentMessageToggle",
+  "status": "ported",
+  "version": "1.0.0"
+}

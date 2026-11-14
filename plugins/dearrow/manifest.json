@@ -1,0 +1,17 @@
+{
+  "name": "Dearrow",
+  "description": "Заменяет кричащие заголовки и превью YouTube-эмбедов на спокойные из Dearrow.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "V"
+    }
+  ],
+  "main": "index.js",
+  "hash": "0828abc0af35477cb143a5ec7dc4279a5442d5d985cbcd98452cab634a02b495",
+  "vendetta": {
+    "icon": "YouTubeIcon"
+  }
+}

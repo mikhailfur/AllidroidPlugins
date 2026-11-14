@@ -1,0 +1,20 @@
+{
+  "name": "DisableCallIdle",
+  "description": "Не выкидывает из пустого голосового канала через 3 минуты.",
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "k1ng_op"
+    },
+    {
+      "name": "V"
+    }
+  ],
+  "main": "index.js",
+  "hash": "a61285433970533b1020e7e3e13fde24834a292db3d35198c0293908cfb53a24",
+  "vendetta": {
+    "icon": "PhoneCallIcon"
+  }
+}

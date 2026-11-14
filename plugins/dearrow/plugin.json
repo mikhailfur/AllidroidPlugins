@@ -1,0 +1,11 @@
+{
+  "name": "Dearrow",
+  "description": "Заменяет кричащие заголовки и превью YouTube-эмбедов на спокойные из Dearrow.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}],
+  "icon": "YouTubeIcon",
+  "category": "Media",
+  "upstream": "dearrow",
+  "status": "beta",
+  "version": "1.0.0",
+  "notes": "Заголовки и превью подтягиваются с sponsor.ajay.app. Если API недоступен, эмбеды остаются как есть."
+}

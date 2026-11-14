@@ -1,0 +1,10 @@
+{
+  "name": "SendTimestamps",
+  "description": "Кнопка в поле чата для вставки Discord-таймстампа и автозамена `HH:MM` при отправке.",
+  "authors": [{"name": "mikhailfur"}, {"name": "V"}, {"name": "Tyler"}, {"name": "Grzesiek11"}],
+  "icon": "CalendarIcon",
+  "category": "Chat",
+  "upstream": "sendTimestamps",
+  "status": "ported",
+  "version": "1.0.0"
+}
