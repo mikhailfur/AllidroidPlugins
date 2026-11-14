@@ -54,6 +54,10 @@ https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-log
    https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/<id>/
    ```
 3. Если плагин уже стоял и просто не работал — выключите и включите его, либо удалите и добавьте заново.
+4. Если старая запись не удаляется или Allidroid пишет «уже установлен», поставь версию с тегом — это другой URL и чистая установка:
+   ```
+   https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/<id>/
+   ```
 
 После установки **ReadAllNotificationsButton** на вкладке сообщений появляется синяя круглая кнопка с галочкой. Если её не видно, действие «Отметить все каналы прочитанными» всегда доступно в настройках плагина.
 
