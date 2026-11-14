@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T08:08:22.685Z",
+  "updatedAt": "2026-11-14T08:09:19.451Z",
   "repo": "mikhailfur/AllidroidPlugins",
   "methodology": "Топ-30 собран по совокупности: плагины, которые Vencord включает по умолчанию, чаще всего упоминаются в гайдах и имеют самые популярные мобильные порты. Vencord не собирает телеметрию, поэтому это сводный рейтинг, а не точная статистика.",
   "top30": [
@@ -108,7 +108,7 @@
       "status": "ported",
       "pluginId": "reviewdb",
       "category": "Profiles",
-      "hash": "66ee32c144a8cf35f3bb8383672624865748e2340c6ab035dcf14e6dfdda1024",
+      "hash": "b0fc5099e8b4598b639d9c6729b0c5b8c4063d6e61290b07d77cb1577b05a9a9",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",
@@ -505,7 +505,7 @@
       "category": "Profiles",
       "priority": 1,
       "note": "Отзывы + OAuth.",
-      "hash": "66ee32c144a8cf35f3bb8383672624865748e2340c6ab035dcf14e6dfdda1024",
+      "hash": "b0fc5099e8b4598b639d9c6729b0c5b8c4063d6e61290b07d77cb1577b05a9a9",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",

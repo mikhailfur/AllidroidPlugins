@@ -193,3 +193,5 @@
 | ★ xsOverlay | 📋 Бэклог | Не входит в топ-30. Порт возможен после разбора мобильных модулей. | — |
 
 > ★ — плагин из топ-30. Полная интерактивная карта: https://mikhailfur.github.io/AllidroidPlugins/
+>
+> PronounDB и MoveAllVoice не входят в список 168: PronounDB — community-порт с pronoundb.org, MoveAllVoice — бонус из отдельного репозитория.

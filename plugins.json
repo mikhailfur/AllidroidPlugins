@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-14T08:08:22.685Z",
+  "updatedAt": "2026-11-14T08:09:19.451Z",
   "repo": "mikhailfur/AllidroidPlugins",
   "branch": "main",
   "plugins": [
@@ -642,7 +642,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Использует официальный API ReviewDB. Для отправки отзывов нужна авторизация через Discord OAuth.",
-      "hash": "66ee32c144a8cf35f3bb8383672624865748e2340c6ab035dcf14e6dfdda1024",
+      "hash": "b0fc5099e8b4598b639d9c6729b0c5b8c4063d6e61290b07d77cb1577b05a9a9",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/reviewdb/"

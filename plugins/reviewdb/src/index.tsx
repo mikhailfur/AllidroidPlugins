@@ -95,7 +95,7 @@ function authenticate() {
                         const url = new URL(location);
                         url.searchParams.append("returnType", "json");
                         url.searchParams.append("clientMod", "vendetta");
-                        const response = await fetch(url, { headers: { accept: "application/json" } });
+                        const response = await fetch(url.toString(), { headers: { accept: "application/json" } });
                         const json = await response.json();
                         if (!json.success) throw new Error(json.message || "Authorization failed");
                         plugin.storage.authToken = json.token;
