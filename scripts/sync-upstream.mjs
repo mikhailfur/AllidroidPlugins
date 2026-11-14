@@ -54,6 +54,7 @@ if (removed.length) console.log(`removed: ${removed.join(", ")}`);
 if (process.env.GITHUB_OUTPUT) {
     const fs = await import("node:fs");
     fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${changed}\n`);
+    fs.appendFileSync(process.env.GITHUB_OUTPUT, `commit=${next.commit}\n`);
     fs.appendFileSync(process.env.GITHUB_OUTPUT, `added=${added.join(",")}\n`);
     fs.appendFileSync(process.env.GITHUB_OUTPUT, `removed=${removed.join(",")}\n`);
 }

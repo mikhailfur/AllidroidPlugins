@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-14T08:02:45.647Z",
+  "updatedAt": "2026-11-14T08:04:10.512Z",
   "repo": "mikhailfur/AllidroidPlugins",
   "branch": "main",
   "plugins": [
@@ -671,7 +671,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "9dba8e5970d36121af7847cf5cf6f2d2b3dc146a1dc9bff8680e770d9fc102d6",
+      "hash": "c13005c1147505da0f0e217f5d589e4989d44a50342afcc2073ca533e6798fc8",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/send-timestamps/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/send-timestamps/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/send-timestamps/"

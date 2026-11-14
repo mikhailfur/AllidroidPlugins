@@ -9,6 +9,7 @@ import {
 } from "@shared";
 
 const SelectedChannelStore = safeStore("SelectedChannelStore");
+const DraftStore = safeStore("DraftStore");
 const messageModule = safeFindByProps("sendMessage", "receiveMessage");
 let unpatch: (() => void)[] = [];
 
@@ -36,7 +37,8 @@ function insert(text: string) {
     const channelId = SelectedChannelStore?.getChannelId?.();
 
     if (input?.setText && channelId) {
-        input.setText(channelId, `${text} `);
+        const draft = DraftStore?.getDraft?.(channelId, 0) ?? "";
+        input.setText(channelId, `${draft}${text} `);
         return;
     }
 
