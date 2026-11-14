@@ -5,8 +5,7 @@
  */
 import {
     patcher, plugin, React, FluxDispatcher, safeFindByName, safeFindByProps, safeStore,
-    appendActionSheetRow, actionSheetRow, SettingsPage, Section, ActionRow, toast
-,
+    appendActionSheetRow, actionSheetRow, SettingsPage, Section, ActionRow, toast,
     applyWithRetry
 } from "@shared";
 

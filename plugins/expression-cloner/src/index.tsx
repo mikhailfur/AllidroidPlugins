@@ -5,8 +5,7 @@
  */
 import {
     patcher, plugin, React, findInReactTree, safeFindByProps, safeFindByTypeName, safeStore,
-    allByPath, showSimpleActionSheet, hideActionSheet, toast, table, SettingsPage, Section, SwitchRow
-,
+    allByPath, showSimpleActionSheet, hideActionSheet, toast, table, SettingsPage, Section, SwitchRow,
     applyWithRetry
 } from "@shared";
 

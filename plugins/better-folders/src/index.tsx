@@ -5,8 +5,7 @@
  */
 import {
     patcher, plugin, React, RN, FluxDispatcher, safeFindByProps, safeFindByPropsAll,
-    safeStore, SettingsPage, Section, SwitchRow, toast, getAssetID
-,
+    safeStore, SettingsPage, Section, SwitchRow, toast, getAssetID,
     applyWithRetry
 } from "@shared";
 

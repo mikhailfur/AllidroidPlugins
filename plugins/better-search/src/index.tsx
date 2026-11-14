@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, RN, safeFindByName, safeFindByProps, toast
-,
+    patcher, plugin, React, RN, safeFindByName, safeFindByProps, toast,
     applyWithRetry
 } from "@shared";
 

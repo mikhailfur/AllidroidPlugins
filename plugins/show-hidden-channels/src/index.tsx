@@ -5,8 +5,7 @@
  */
 import {
     patcher, plugin, React, RN, Constants, safeFindByName, safeFindByProps, safeStore,
-    SettingsPage, Section, SwitchRow, toast
-,
+    SettingsPage, Section, SwitchRow, toast,
     applyWithRetry
 } from "@shared";
 

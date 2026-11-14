@@ -5,8 +5,7 @@
  */
 import {
     patcher, plugin, React, RN, findInReactTree, safeFindByName,
-    formatBytes, SettingsPage, Section, SwitchRow, toast, patchComponent
-,
+    formatBytes, SettingsPage, Section, SwitchRow, toast, patchComponent,
     applyWithRetry
 } from "@shared";
 

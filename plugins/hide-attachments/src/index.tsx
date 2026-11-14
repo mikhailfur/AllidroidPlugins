@@ -6,8 +6,7 @@
 import {
     patcher, plugin, React, RN, FluxDispatcher, findInReactTree, safeFindByName,
     safeFindByTypeName, safeStore, SettingsPage, Section, ActionRow, appendActionSheetRow, findByPath,
-    actionSheetGroup, actionSheetRow, toast, table, patchComponent
-,
+    actionSheetGroup, actionSheetRow, toast, table, patchComponent,
     applyWithRetry
 } from "@shared";
 

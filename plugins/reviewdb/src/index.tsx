@@ -6,8 +6,7 @@
 import {
     patcher, plugin, React, RN, copy, findInReactTree, safeFindByName, safeFindByProps,
     safeFindByTypeName, safeStore, toast, SettingsPage, Section, SwitchRow, ActionRow, findByPath,
-    table, patchComponent
-,
+    table, patchComponent,
     applyWithRetry
 } from "@shared";
 

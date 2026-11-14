@@ -5,8 +5,7 @@
  */
 import {
     patcher, plugin, React, findInReactTree, safeFindByTypeName, safeStore, safeFindByProps, findByPath,
-    openImageModal, copy, SettingsPage, Section, SwitchRow, toast, table, patchComponent
-,
+    openImageModal, copy, SettingsPage, Section, SwitchRow, toast, table, patchComponent,
     applyWithRetry
 } from "@shared";
 
