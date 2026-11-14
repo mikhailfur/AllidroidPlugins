@@ -1,10 +1,20 @@
 {
   "name": "DisableCallIdle",
   "description": "Не выкидывает из пустого голосового канала через 3 минуты.",
-  "authors": [{"name": "mikhailfur"}, {"name": "k1ng_op"}, {"name": "V"}],
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "k1ng_op"
+    },
+    {
+      "name": "V"
+    }
+  ],
   "icon": "PhoneCallIcon",
   "category": "Voice",
   "upstream": "disableCallIdle",
-  "status": "ported",
+  "status": "bonus",
   "version": "1.0.0"
 }

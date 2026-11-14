@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T08:09:19.451Z",
+  "updatedAt": "2026-11-14T08:09:53.800Z",
   "repo": "mikhailfur/AllidroidPlugins",
   "methodology": "Топ-30 собран по совокупности: плагины, которые Vencord включает по умолчанию, чаще всего упоминаются в гайдах и имеют самые популярные мобильные порты. Vencord не собирает телеметрию, поэтому это сводный рейтинг, а не точная статистика.",
   "top30": [
@@ -755,7 +755,7 @@
     {
       "id": "anonymous-file-names",
       "name": "AnonymousFileNames",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "anonymous-file-names",
       "category": "Privacy",
       "priority": 2,
@@ -770,7 +770,7 @@
     {
       "id": "disable-call-idle",
       "name": "DisableCallIdle",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "disable-call-idle",
       "category": "Voice",
       "priority": 2,
@@ -785,7 +785,7 @@
     {
       "id": "always-trust",
       "name": "AlwaysTrust",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "always-trust",
       "category": "Utility",
       "priority": 2,
@@ -800,7 +800,7 @@
     {
       "id": "file-size-on-picker",
       "name": "FileSizeOnPicker",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "file-size-on-picker",
       "category": "Media",
       "priority": 2,
@@ -815,7 +815,7 @@
     {
       "id": "no-pending-count",
       "name": "NoPendingCount",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "no-pending-count",
       "category": "Notifications",
       "priority": 2,

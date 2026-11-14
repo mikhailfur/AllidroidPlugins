@@ -2,30 +2,15 @@
   "upstream": "d07030c0968e31e41caa0c35fda0ef8ae63a079e",
   "pluginCount": 168,
   "counts": {
-    "ported": 26,
+    "ported": 22,
     "beta": 1,
+    "bonus": 4,
     "builtin": 6,
     "planned": 9,
     "not-portable": 29,
     "backlog": 97
   },
   "rows": [
-    {
-      "name": "alwaysTrust",
-      "status": "ported",
-      "label": "✅ Портирован",
-      "pluginId": "always-trust",
-      "reason": "Работает как user plugin, установка по ссылке.",
-      "top": false
-    },
-    {
-      "name": "anonymiseFileNames",
-      "status": "ported",
-      "label": "✅ Портирован",
-      "pluginId": "anonymous-file-names",
-      "reason": "Работает как user plugin, установка по ссылке.",
-      "top": false
-    },
     {
       "name": "betterFolders",
       "status": "ported",
@@ -67,14 +52,6 @@
       "top": true
     },
     {
-      "name": "disableCallIdle",
-      "status": "ported",
-      "label": "✅ Портирован",
-      "pluginId": "disable-call-idle",
-      "reason": "Работает как user plugin, установка по ссылке.",
-      "top": false
-    },
-    {
       "name": "expressionManager",
       "status": "ported",
       "label": "✅ Портирован",
@@ -113,14 +90,6 @@
       "pluginId": "no-blocked-messages",
       "reason": "Работает как user plugin, установка по ссылке.",
       "top": true
-    },
-    {
-      "name": "noPendingCount",
-      "status": "ported",
-      "label": "✅ Портирован",
-      "pluginId": "no-pending-count",
-      "reason": "Работает как user plugin, установка по ссылке.",
-      "top": false
     },
     {
       "name": "noReplyMention",
@@ -225,6 +194,38 @@
       "pluginId": "dearrow",
       "reason": "Работает как user plugin, установка по ссылке.",
       "top": true
+    },
+    {
+      "name": "alwaysTrust",
+      "status": "bonus",
+      "label": "🧩 Бонус",
+      "pluginId": "always-trust",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": false
+    },
+    {
+      "name": "anonymiseFileNames",
+      "status": "bonus",
+      "label": "🧩 Бонус",
+      "pluginId": "anonymous-file-names",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": false
+    },
+    {
+      "name": "disableCallIdle",
+      "status": "bonus",
+      "label": "🧩 Бонус",
+      "pluginId": "disable-call-idle",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": false
+    },
+    {
+      "name": "noPendingCount",
+      "status": "bonus",
+      "label": "🧩 Бонус",
+      "pluginId": "no-pending-count",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": false
     },
     {
       "name": "callTimer",

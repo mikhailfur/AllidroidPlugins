@@ -1,10 +1,17 @@
 {
   "name": "NoPendingCount",
   "description": "Убирает красный счётчик входящих заявок в друзья и запросов сообщений.",
-  "authors": [{"name": "mikhailfur"}, {"name": "amia"}],
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "amia"
+    }
+  ],
   "icon": "FriendsIcon",
   "category": "Notifications",
   "upstream": "noPendingCount",
-  "status": "ported",
+  "status": "bonus",
   "version": "1.0.0"
 }

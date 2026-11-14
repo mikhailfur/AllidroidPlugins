@@ -1,10 +1,20 @@
 {
   "name": "AlwaysTrust",
   "description": "Убирает предупреждение о недоверенном домене при открытии внешних ссылок.",
-  "authors": [{"name": "mikhailfur"}, {"name": "zt"}, {"name": "Trwy"}],
+  "authors": [
+    {
+      "name": "mikhailfur"
+    },
+    {
+      "name": "zt"
+    },
+    {
+      "name": "Trwy"
+    }
+  ],
   "icon": "ShieldIcon",
   "category": "Utility",
   "upstream": "alwaysTrust",
-  "status": "ported",
+  "status": "bonus",
   "version": "1.0.0"
 }

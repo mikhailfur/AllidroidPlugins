@@ -6,8 +6,9 @@
 
 | Статус | Кол-во |
 | --- | ---: |
-| ✅ Портирован | 26 |
+| ✅ Портирован | 22 |
 | 🧪 Beta | 1 |
+| 🧩 Бонус | 4 |
 | ⚪ Уже в Allidroid | 6 |
 | 🛠 Запланирован | 9 |
 | ⛔ Не портируется | 29 |
@@ -23,20 +24,16 @@
 
 | Плагин | Статус | Почему | Установка |
 | --- | --- | --- | --- |
-| alwaysTrust | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/always-trust/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/always-trust/) |
-| anonymiseFileNames | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/anonymous-file-names/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/anonymous-file-names/) |
 | ★ betterFolders | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-folders/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-folders/) |
 | ★ betterSearch | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-search/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-search/) |
 | ★ characterCounter | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/character-counter/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/character-counter/) |
 | ★ clearURLs | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/clear-urls/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/clear-urls/) |
 | ★ copyEmojiMarkdown | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/) |
-| disableCallIdle | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/disable-call-idle/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/disable-call-idle/) |
 | ★ expressionManager | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/) |
 | ★ fakeNitro | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/fake-nitro/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/fake-nitro/) |
 | ★ hideAttachments | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/) |
 | ★ messageLogger | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/message-logger/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-logger/) |
 | ★ noBlockedMessages | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-blocked-messages/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-blocked-messages/) |
-| noPendingCount | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-pending-count/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-pending-count/) |
 | ★ noReplyMention | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-reply-mention/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-reply-mention/) |
 | ★ pinDms | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/) |
 | ★ platformIndicators | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/) |
@@ -50,6 +47,10 @@
 | ★ usrbg | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/usrbg/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/usrbg/) |
 | ★ viewIcons | ✅ Портирован | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/) |
 | ★ dearrow | 🧪 Beta | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/dearrow/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/dearrow/) |
+| alwaysTrust | 🧩 Бонус | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/always-trust/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/always-trust/) |
+| anonymiseFileNames | 🧩 Бонус | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/anonymous-file-names/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/anonymous-file-names/) |
+| disableCallIdle | 🧩 Бонус | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/disable-call-idle/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/disable-call-idle/) |
+| noPendingCount | 🧩 Бонус | Работает как user plugin, установка по ссылке. | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-pending-count/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-pending-count/) |
 | ★ callTimer | ⚪ Уже в Allidroid | В мобильном Discord таймер звонка уже показывается в шапке голосового канала (OngoingCallTimer). Дублировать его не нужно. | — |
 | ★ experiments | ⚪ Уже в Allidroid | В Allidroid уже есть раздел экспериментов. | — |
 | ★ imageZoom | ⚪ Уже в Allidroid | Мобильный просмотрщик медиа уже умеет пинч-зум и полноэкранный просмотр. | — |

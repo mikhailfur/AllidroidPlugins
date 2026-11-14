@@ -467,7 +467,7 @@
     {
       "id": "anonymous-file-names",
       "name": "AnonymousFileNames",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "anonymous-file-names",
       "category": "Privacy",
       "priority": 2,
@@ -476,7 +476,7 @@
     {
       "id": "disable-call-idle",
       "name": "DisableCallIdle",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "disable-call-idle",
       "category": "Voice",
       "priority": 2,
@@ -485,7 +485,7 @@
     {
       "id": "always-trust",
       "name": "AlwaysTrust",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "always-trust",
       "category": "Utility",
       "priority": 2,
@@ -494,7 +494,7 @@
     {
       "id": "file-size-on-picker",
       "name": "FileSizeOnPicker",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "file-size-on-picker",
       "category": "Media",
       "priority": 2,
@@ -503,7 +503,7 @@
     {
       "id": "no-pending-count",
       "name": "NoPendingCount",
-      "status": "ported",
+      "status": "bonus",
       "pluginId": "no-pending-count",
       "category": "Notifications",
       "priority": 2,
