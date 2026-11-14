@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, RN, findInReactTree, safeFindByName,
+    patcher, plugin, React, RN, findInReactTree, safeFindByName, safeFindByDisplayName,
     formatBytes, SettingsPage, Section, SwitchRow, toast, patchComponent,
     applyWithRetry
 } from "@shared";
@@ -38,7 +38,8 @@ function SizeTag({ url, style }: { url: string; style: any }) {
 }
 
 function apply() {
-    const pressable = safeFindByName("Pressable", false);
+    const pressable = safeFindByName("Pressable", false)
+        ?? safeFindByDisplayName("Pressable", false);
     if (!pressable) {
         toast("FileSizeOnPicker: Pressable not found", "WarningIcon");
         return;

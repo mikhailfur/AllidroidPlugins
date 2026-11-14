@@ -5,14 +5,18 @@
 
 declare const vendetta: any;
 
-export const v: any = (globalThis as any).vendetta ?? vendetta;
+// Allidroid wraps user plugins as `vendetta => { return <bundle> }` and passes
+// the per-plugin object (with `plugin.storage`) as the argument. Prefer that
+// argument over `globalThis.vendetta`: the global API object has no `plugin`
+// property, so using it breaks every plugin that calls `plugin.storage`.
+export const v: any = typeof vendetta !== "undefined" ? vendetta : (globalThis as any).vendetta;
 
 export const patcher = v.patcher;
 export const metro = v.metro;
 export const ui = v.ui;
 export const utils = v.utils;
-export const plugin = v.plugin;
-export const storage = v.plugin?.storage ?? {};
+export const plugin = v.plugin ?? { storage: {} };
+export const storage = plugin.storage ?? {};
 export const logger = v.logger ?? console;
 
 export const React = metro.common.React;
@@ -58,6 +62,14 @@ export function safeFindByPropsAll(...props: string[]): any[] {
 export function safeFindByName(name: string, defaultExport = true): any {
     try {
         return findByName(name, defaultExport);
+    } catch {
+        return null;
+    }
+}
+
+export function safeFindByDisplayName(name: string, defaultExport = true): any {
+    try {
+        return metro.findByDisplayName(name, defaultExport);
     } catch {
         return null;
     }
