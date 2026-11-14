@@ -14,7 +14,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/message-logger/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-logger/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/message-logger/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/message-logger/"
       }
     },
     {
@@ -28,7 +28,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/fake-nitro/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/fake-nitro/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/fake-nitro/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/fake-nitro/"
       }
     },
     {
@@ -42,7 +42,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/usrbg/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/usrbg/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/usrbg/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/usrbg/"
       }
     },
     {
@@ -56,7 +56,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-folders/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-folders/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-folders/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/better-folders/"
       }
     },
     {
@@ -70,7 +70,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-hidden-channels/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-hidden-channels/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/show-hidden-channels/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/show-hidden-channels/"
       }
     },
     {
@@ -84,7 +84,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/platform-indicators/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/platform-indicators/"
       }
     },
     {
@@ -98,7 +98,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-typing/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-typing/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/silent-typing/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/silent-typing/"
       }
     },
     {
@@ -112,7 +112,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/reviewdb/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/reviewdb/"
       }
     },
     {
@@ -128,7 +128,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pronoundb/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/pronoundb/"
       }
     },
     {
@@ -142,7 +142,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-blocked-messages/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-blocked-messages/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-blocked-messages/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/no-blocked-messages/"
       }
     },
     {
@@ -156,7 +156,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/expression-cloner/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/expression-cloner/"
       }
     },
     {
@@ -170,7 +170,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/view-icons/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/view-icons/"
       }
     },
     {
@@ -184,7 +184,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pin-dms/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/pin-dms/"
       }
     },
     {
@@ -198,7 +198,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-search/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-search/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-search/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/better-search/"
       }
     },
     {
@@ -212,7 +212,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-reply-mention/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-reply-mention/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-reply-mention/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/no-reply-mention/"
       }
     },
     {
@@ -226,7 +226,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/clear-urls/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/clear-urls/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/clear-urls/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/clear-urls/"
       }
     },
     {
@@ -241,7 +241,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/dearrow/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/dearrow/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/dearrow/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/dearrow/"
       }
     },
     {
@@ -255,7 +255,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-timeout-duration/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-timeout-duration/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/show-timeout-duration/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/show-timeout-duration/"
       }
     },
     {
@@ -269,7 +269,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/send-timestamps/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/send-timestamps/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/send-timestamps/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/send-timestamps/"
       }
     },
     {
@@ -283,7 +283,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-message-toggle/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-message-toggle/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/silent-message-toggle/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/silent-message-toggle/"
       }
     },
     {
@@ -297,7 +297,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/read-all-notifications/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/read-all-notifications/"
       }
     },
     {
@@ -311,7 +311,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/character-counter/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/character-counter/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/character-counter/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/character-counter/"
       }
     },
     {
@@ -325,7 +325,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/hide-attachments/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/hide-attachments/"
       }
     },
     {
@@ -339,7 +339,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/copy-emoji-markdown/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/copy-emoji-markdown/"
       }
     },
     {
@@ -404,7 +404,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/message-logger/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-logger/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/message-logger/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/message-logger/"
       }
     },
     {
@@ -419,7 +419,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/fake-nitro/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/fake-nitro/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/fake-nitro/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/fake-nitro/"
       }
     },
     {
@@ -434,7 +434,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/usrbg/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/usrbg/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/usrbg/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/usrbg/"
       }
     },
     {
@@ -449,7 +449,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-folders/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-folders/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-folders/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/better-folders/"
       }
     },
     {
@@ -464,7 +464,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-hidden-channels/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-hidden-channels/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/show-hidden-channels/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/show-hidden-channels/"
       }
     },
     {
@@ -479,7 +479,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/platform-indicators/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/platform-indicators/"
       }
     },
     {
@@ -494,7 +494,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-typing/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-typing/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/silent-typing/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/silent-typing/"
       }
     },
     {
@@ -509,7 +509,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/reviewdb/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/reviewdb/"
       }
     },
     {
@@ -524,7 +524,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pronoundb/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/pronoundb/"
       }
     },
     {
@@ -539,7 +539,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-blocked-messages/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-blocked-messages/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-blocked-messages/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/no-blocked-messages/"
       }
     },
     {
@@ -554,7 +554,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/expression-cloner/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/expression-cloner/"
       }
     },
     {
@@ -569,7 +569,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/view-icons/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/view-icons/"
       }
     },
     {
@@ -584,7 +584,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pin-dms/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/pin-dms/"
       }
     },
     {
@@ -599,7 +599,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-search/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-search/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-search/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/better-search/"
       }
     },
     {
@@ -614,7 +614,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-reply-mention/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-reply-mention/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-reply-mention/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/no-reply-mention/"
       }
     },
     {
@@ -629,7 +629,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/clear-urls/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/clear-urls/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/clear-urls/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/clear-urls/"
       }
     },
     {
@@ -644,7 +644,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/dearrow/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/dearrow/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/dearrow/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/dearrow/"
       }
     },
     {
@@ -659,7 +659,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-timeout-duration/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-timeout-duration/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/show-timeout-duration/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/show-timeout-duration/"
       }
     },
     {
@@ -674,7 +674,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/send-timestamps/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/send-timestamps/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/send-timestamps/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/send-timestamps/"
       }
     },
     {
@@ -689,7 +689,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-message-toggle/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-message-toggle/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/silent-message-toggle/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/silent-message-toggle/"
       }
     },
     {
@@ -704,7 +704,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/read-all-notifications/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/read-all-notifications/"
       }
     },
     {
@@ -719,7 +719,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/character-counter/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/character-counter/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/character-counter/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/character-counter/"
       }
     },
     {
@@ -734,7 +734,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/hide-attachments/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/hide-attachments/"
       }
     },
     {
@@ -749,7 +749,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/copy-emoji-markdown/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/copy-emoji-markdown/"
       }
     },
     {
@@ -764,7 +764,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/anonymous-file-names/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/anonymous-file-names/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/anonymous-file-names/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/anonymous-file-names/"
       }
     },
     {
@@ -779,7 +779,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/disable-call-idle/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/disable-call-idle/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/disable-call-idle/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/disable-call-idle/"
       }
     },
     {
@@ -794,7 +794,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/always-trust/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/always-trust/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/always-trust/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/always-trust/"
       }
     },
     {
@@ -809,7 +809,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/file-size-on-picker/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/file-size-on-picker/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/file-size-on-picker/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/file-size-on-picker/"
       }
     },
     {
@@ -824,7 +824,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-pending-count/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-pending-count/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-pending-count/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/no-pending-count/"
       }
     },
     {
@@ -839,7 +839,7 @@
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/move-all-voice/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/move-all-voice/",
-        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/move-all-voice/"
+        "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/move-all-voice/"
       }
     },
     {

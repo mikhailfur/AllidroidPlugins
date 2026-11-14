@@ -37,7 +37,7 @@ https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-log
 | jsDelivr | `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/<id>/` | обновляется сразу, рекомендуем |
 | raw GitHub | `https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/<id>/` | кэш ~5 минут, иногда дольше |
 
-Стабильная версия без автообновления: `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/<id>/`.
+Стабильная версия без автообновления: `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/<id>/`.
 
 > [!TIP]
 > Allidroid сам добавляет к ссылке `manifest.json` и `index.js`. Ссылка должна указывать на **папку**, а не на отдельный файл.

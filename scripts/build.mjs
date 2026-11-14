@@ -100,7 +100,7 @@ if (!only && !check) {
         hash: manifest.hash,
         raw: `https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/${id}/`,
         jsdelivr: `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/${id}/`,
-        stable: `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v${meta.version ?? "1.0.0"}/plugins/${id}/`
+        stable: `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.1/plugins/${id}/`
     }));
 
     let updatedAt = new Date().toISOString();
