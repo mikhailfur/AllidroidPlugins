@@ -22,8 +22,11 @@
 2. Вставь ссылку на папку плагина. Например, MessageLogger:
 
 ```
-https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/message-logger/
+https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-logger/
 ```
+
+> [!TIP]
+> Для свежих фиксов лучше использовать **jsDelivr**: raw GitHub может отдавать старый файл из кэша несколько минут (иногда дольше). Если raw-ссылка показывает старую версию — замени её на jsDelivr.
 
 3. Включи плагин в списке. При следующем запуске Allidroid сам сравнит `hash` в `manifest.json` и скачает свежий `index.js`.
 
@@ -31,8 +34,8 @@ https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/messa
 
 | Зеркало | Ссылка | Кэш |
 | --- | --- | --- |
-| raw GitHub | `https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/<id>/` | ~5 минут |
-| jsDelivr | `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/<id>/` | может кэшировать дольше |
+| jsDelivr | `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/<id>/` | обновляется сразу, рекомендуем |
+| raw GitHub | `https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/<id>/` | кэш ~5 минут, иногда дольше |
 
 Стабильная версия без автообновления: `https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/<id>/`.
 
@@ -46,7 +49,10 @@ https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/messa
 Если раньше появлялась ошибка **`Cannot read property 'storage' of undefined`** — это был баг общего runtime, исправленный в последнем коммите. Старый бандл мог не сохраниться в списке плагинов, поэтому:
 
 1. Удалите проблемный плагин из списка (корзина).
-2. Добавьте его ссылку заново.
+2. Добавьте его ссылку заново — лучше через **jsDelivr**, а не raw:
+   ```
+   https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/<id>/
+   ```
 3. Если плагин уже стоял и просто не работал — выключите и включите его, либо удалите и добавьте заново.
 
 После установки **ReadAllNotificationsButton** на вкладке сообщений появляется синяя круглая кнопка с галочкой. Если её не видно, действие «Отметить все каналы прочитанными» всегда доступно в настройках плагина.
@@ -85,30 +91,30 @@ Vencord не собирает телеметрию, поэтому «самые 
 
 | # | Плагин | Статус | Установка |
 | ---: | --- | :---: | --- |
-| 1 | **MessageLogger** — удалённые и изменённые сообщения | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/message-logger/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-logger/) |
-| 2 | **FakeNitro** — эмодзи, размер, стрим, часть тем | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/fake-nitro/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/fake-nitro/) |
-| 3 | **USRBG** — баннеры USRBG без Nitro | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/usrbg/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/usrbg/) |
-| 4 | **BetterFolders** — автозакрытие папок, скрытие иконок | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-folders/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-folders/) |
-| 5 | **ShowHiddenChannels** — метаданные скрытых каналов | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-hidden-channels/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-hidden-channels/) |
-| 6 | **PlatformIndicators** — ПК/веб/мобильный/VR | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/) |
-| 7 | **SilentTyping** — скрыть «печатает…» | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-typing/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-typing/) |
-| 8 | **ReviewDB** — отзывы на профили + OAuth | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/) |
-| 9 | **PronounDB** — местоимения в профиле и чате ¹ | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/) |
-| 10 | **NoBlockedMessages** — скрыть блок/игнор и ответы | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-blocked-messages/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-blocked-messages/) |
-| 11 | **ExpressionCloner** — клонировать эмодзи на сервер | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/) |
-| 12 | **ViewIcons** — аватар/баннер в полном размере | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/) |
-| 13 | **PinDMs** — закрепить ЛС вверху списка | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/) |
-| 14 | **BetterSearch** — переход по страницам поиска | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-search/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-search/) |
-| 15 | **NoReplyMention** — без пинга при ответе | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-reply-mention/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-reply-mention/) |
-| 16 | **ClearURLs** — чистка utm/fbclid/трекеров | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/clear-urls/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/clear-urls/) |
-| 17 | **Dearrow** — спокойные заголовки YouTube | 🧪 | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/dearrow/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/dearrow/) |
-| 18 | **ShowTimeoutDuration** — остаток тайм-аута | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-timeout-duration/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-timeout-duration/) |
-| 19 | **SendTimestamps** — кнопка и `HH:MM` | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/send-timestamps/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/send-timestamps/) |
-| 20 | **SilentMessageToggle** — `@silent` в один тап | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-message-toggle/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-message-toggle/) |
-| 21 | **ReadAllNotificationsButton** — прочитать все серверы | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/) |
-| 22 | **CharacterCounter** — счётчик символов | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/character-counter/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/character-counter/) |
-| 23 | **HideAttachments** — скрыть медиа сообщения | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/) |
-| 24 | **CopyEmojiMarkdown** — `<:name:id>` в буфер | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/) |
+| 1 | **MessageLogger** — удалённые и изменённые сообщения | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-logger/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/message-logger/) |
+| 2 | **FakeNitro** — эмодзи, размер, стрим, часть тем | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/fake-nitro/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/fake-nitro/) |
+| 3 | **USRBG** — баннеры USRBG без Nitro | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/usrbg/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/usrbg/) |
+| 4 | **BetterFolders** — автозакрытие папок, скрытие иконок | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-folders/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-folders/) |
+| 5 | **ShowHiddenChannels** — метаданные скрытых каналов | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-hidden-channels/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-hidden-channels/) |
+| 6 | **PlatformIndicators** — ПК/веб/мобильный/VR | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/) |
+| 7 | **SilentTyping** — скрыть «печатает…» | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-typing/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-typing/) |
+| 8 | **ReviewDB** — отзывы на профили + OAuth | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/) |
+| 9 | **PronounDB** — местоимения в профиле и чате ¹ | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/) |
+| 10 | **NoBlockedMessages** — скрыть блок/игнор и ответы | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-blocked-messages/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-blocked-messages/) |
+| 11 | **ExpressionCloner** — клонировать эмодзи на сервер | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/) |
+| 12 | **ViewIcons** — аватар/баннер в полном размере | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/) |
+| 13 | **PinDMs** — закрепить ЛС вверху списка | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/) |
+| 14 | **BetterSearch** — переход по страницам поиска | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-search/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-search/) |
+| 15 | **NoReplyMention** — без пинга при ответе | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-reply-mention/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-reply-mention/) |
+| 16 | **ClearURLs** — чистка utm/fbclid/трекеров | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/clear-urls/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/clear-urls/) |
+| 17 | **Dearrow** — спокойные заголовки YouTube | 🧪 | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/dearrow/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/dearrow/) |
+| 18 | **ShowTimeoutDuration** — остаток тайм-аута | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-timeout-duration/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-timeout-duration/) |
+| 19 | **SendTimestamps** — кнопка и `HH:MM` | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/send-timestamps/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/send-timestamps/) |
+| 20 | **SilentMessageToggle** — `@silent` в один тап | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-message-toggle/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-message-toggle/) |
+| 21 | **ReadAllNotificationsButton** — прочитать все серверы | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/) |
+| 22 | **CharacterCounter** — счётчик символов | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/character-counter/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/character-counter/) |
+| 23 | **HideAttachments** — скрыть медиа сообщения | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/) |
+| 24 | **CopyEmojiMarkdown** — `<:name:id>` в буфер | ✅ | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/) |
 | 25 | **SpotifyControls** — плеер над account panel | ⛔ | — |
 | 26 | **CustomRPC** — локальный Discord RPC | ⛔ | — |
 | 27 | **VencordToolbox** — десктопный тулбар | ⛔ | — |
@@ -126,12 +132,12 @@ Vencord не собирает телеметрию, поэтому «самые 
 
 | Плагин | Что делает | Установка |
 | --- | --- | --- |
-| **AnonymousFileNames** | Случайные имена файлов перед загрузкой | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/anonymous-file-names/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/anonymous-file-names/) |
-| **DisableCallIdle** | Не выкидывает из пустого звонка | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/disable-call-idle/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/disable-call-idle/) |
-| **AlwaysTrust** | Без предупреждения о недоверенном домене | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/always-trust/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/always-trust/) |
-| **FileSizeOnPicker** | Размер файла в медиа-пикере | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/file-size-on-picker/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/file-size-on-picker/) |
-| **NoPendingCount** | Скрыть счётчик заявок в друзья | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-pending-count/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-pending-count/) |
-| **MoveAllVoice** | Перенести всех участников голосового канала | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/move-all-voice/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/move-all-voice/) |
+| **AnonymousFileNames** | Случайные имена файлов перед загрузкой | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/anonymous-file-names/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/anonymous-file-names/) |
+| **DisableCallIdle** | Не выкидывает из пустого звонка | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/disable-call-idle/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/disable-call-idle/) |
+| **AlwaysTrust** | Без предупреждения о недоверенном домене | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/always-trust/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/always-trust/) |
+| **FileSizeOnPicker** | Размер файла в медиа-пикере | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/file-size-on-picker/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/file-size-on-picker/) |
+| **NoPendingCount** | Скрыть счётчик заявок в друзья | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-pending-count/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-pending-count/) |
+| **MoveAllVoice** | Перенести всех участников голосового канала | [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/move-all-voice/) · [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/move-all-voice/) |
 
 ---
 
