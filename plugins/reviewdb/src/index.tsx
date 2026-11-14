@@ -275,6 +275,7 @@ function patchProfile(name: string) {
         SimplifiedUserProfileContent: "modules/user_profile/native/SimplifiedUserProfileContent.tsx"
     };
     const component = safeFindByTypeName(name, false)
+        ?? safeFindByName(name, false)
         ?? (paths[name] ? findByPath(paths[name], false) : null);
     if (!component) return;
 

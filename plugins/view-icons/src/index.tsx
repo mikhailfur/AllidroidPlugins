@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, findInReactTree, safeFindByTypeName, safeStore, safeFindByProps, findByPath,
+    patcher, plugin, React, findInReactTree, safeFindByTypeName, safeFindByName, safeStore, safeFindByProps, findByPath,
     openImageModal, copy, SettingsPage, Section, SwitchRow, toast, table, patchComponent,
     applyWithRetry
 } from "@shared";
@@ -79,6 +79,7 @@ function appendRows(tree: any, userId: string, guildId?: string) {
 
 function apply() {
     const component = safeFindByTypeName("UserProfileActionSheet", false)
+        ?? safeFindByName("UserProfileActionSheet", false)
         ?? findByPath("modules/user_profile/native/UserProfileActionSheet.tsx", false);
     if (!component) {
         toast("ViewIcons: UserProfileActionSheet not found", "WarningIcon");

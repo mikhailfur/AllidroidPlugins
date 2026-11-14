@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, RN, findInReactTree, safeFindByTypeName, safeStore, findByPath,
+    patcher, plugin, React, RN, findInReactTree, safeFindByTypeName, safeFindByName, safeStore, findByPath,
     SettingsPage, Section, SwitchRow, toast, logger, patchComponent,
     applyWithRetry
 } from "@shared";
@@ -98,6 +98,7 @@ function patchProfile(name: string) {
         SimplifiedUserProfileContent: "modules/user_profile/native/SimplifiedUserProfileContent.tsx"
     };
     const component = safeFindByTypeName(name, false)
+        ?? safeFindByName(name, false)
         ?? (paths[name] ? findByPath(paths[name], false) : null);
     if (!component) return;
 

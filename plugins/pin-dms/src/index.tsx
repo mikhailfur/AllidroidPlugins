@@ -5,7 +5,7 @@
  */
 import {
     patcher, plugin, React, FluxDispatcher, safeFindByName, safeFindByProps, safeStore,
-    appendActionSheetRow, actionSheetRow, SettingsPage, Section, ActionRow, toast, patchComponent,
+    appendActionSheetRow, actionSheetRow, SettingsPage, Section, ActionRow, toast, patchComponent, safeFindByTypeName,
     applyWithRetry
 } from "@shared";
 
@@ -54,7 +54,8 @@ function apply() {
         }));
     }
 
-    const sheet = safeFindByName("ChannelLongPressActionSheet", false);
+    const sheet = safeFindByName("ChannelLongPressActionSheet", false)
+        ?? safeFindByTypeName("ChannelLongPressActionSheet", false);
     if (sheet) {
         unpatch.push(...patchComponent(sheet, "after", ([props]: any[], tree: any) => {
             const channelId = props?.channelId ?? props?.channel?.id;

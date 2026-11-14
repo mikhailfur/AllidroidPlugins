@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, copy, findInReactTree, safeFindByTypeName, allByPath,
+    patcher, plugin, React, copy, findInReactTree, safeFindByTypeName, safeFindByName, allByPath,
     SettingsPage, Section, SwitchRow, toast, table, patchComponent,
     applyWithRetry
 } from "@shared";
@@ -65,7 +65,7 @@ function patchEmojiModule(module: any) {
 
 function apply() {
     for (const name of ["CustomEmojiContent", "StandardEmojiContent"]) {
-        const component = safeFindByTypeName(name, false);
+        const component = safeFindByTypeName(name, false) ?? safeFindByName(name, false);
         if (component) patchEmojiModule(component);
     }
 

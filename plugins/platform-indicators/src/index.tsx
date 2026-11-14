@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, RN, findInReactTree, safeStore, safeFindByTypeName, findByPath,
+    patcher, plugin, React, RN, findInReactTree, safeStore, safeFindByTypeName, safeFindByName, findByPath,
     getAssetID, SettingsPage, Section, SwitchRow, toast, patchComponent,
     applyWithRetry
 } from "@shared";
@@ -111,6 +111,7 @@ let retryCancel: (() => void) | null = null;
 function apply() {
     if (plugin.storage.profile !== false) {
         const profile = safeFindByTypeName("UserProfilePrimaryInfo", false)
+            ?? safeFindByName("UserProfilePrimaryInfo", false)
             ?? findByPath("modules/user_profile/native/UserProfilePrimaryInfo.tsx", false);
         if (profile) {
             unpatch.push(...patchComponent(profile, "after", ([props]: any[], tree: any) =>
@@ -121,6 +122,7 @@ function apply() {
 
     if (plugin.storage.dmList !== false) {
         const item = safeFindByTypeName("MessagesItemChannelContent", false)
+            ?? safeFindByName("MessagesItemChannelContent", false)
             ?? findByPath("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelContent.tsx", false);
         if (item) {
             unpatch.push(...patchComponent(item, "after", ([props]: any[], tree: any) => {
@@ -133,6 +135,7 @@ function apply() {
 
     if (plugin.storage.memberList !== false) {
         const row = safeFindByTypeName("UserRow", false)
+            ?? safeFindByName("UserRow", false)
             ?? findByPath("modules/main_tabs_v2/native/shared_components/user_list/UserRow.tsx", false);
         if (row) {
             unpatch.push(...patchComponent(row, "after", ([props]: any[], tree: any) =>

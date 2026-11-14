@@ -76,7 +76,8 @@ function apply() {
 
     const sheet = safeFindByName("MessageLongPressActionSheet", false)
         ?? safeFindByTypeName("MessageLongPressActionSheet", false)
-        ?? findByPath("modules/messages/native/long_press/LongPressMessageActionSheet.tsx", false);
+        ?? findByPath("modules/messages/native/long_press/LongPressMessageActionSheet.tsx", false)
+        ?? safeFindByName("LongPressMessageActionSheet", false);
 
     if (sheet) {
         unpatch.push(...patchComponent(sheet, "after", ([props]: any[], tree: any) =>

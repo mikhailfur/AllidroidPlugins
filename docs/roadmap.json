@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T08:52:54.985Z",
+  "updatedAt": "2026-11-14T08:54:32.118Z",
   "repo": "mikhailfur/AllidroidPlugins",
   "methodology": "Топ-30 собран по совокупности: плагины, которые Vencord включает по умолчанию, чаще всего упоминаются в гайдах и имеют самые популярные мобильные порты. Vencord не собирает телеметрию, поэтому это сводный рейтинг, а не точная статистика.",
   "top30": [
@@ -80,7 +80,7 @@
       "status": "ported",
       "pluginId": "platform-indicators",
       "category": "Profiles",
-      "hash": "e103ef8398e1ccc8d1c7d58fe5131eec211ac05f68f9073b81145f9c583dc9de",
+      "hash": "1060fd3fadb7727d378764c4bee1006b9c941b1f18880d48cc677cdccdf31e3c",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/",
@@ -108,7 +108,7 @@
       "status": "ported",
       "pluginId": "reviewdb",
       "category": "Profiles",
-      "hash": "943a6dcfe4db5ca10b2dc1bc08632d3a152093e2c924c02297ec4006d0a0e70d",
+      "hash": "fce5e0cbd6302c4a3cd9323f5dc47e0e4c907e232c5a9b34aaca4d93d0f11051",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",
@@ -124,7 +124,7 @@
       "category": "Profiles",
       "reason": "Community-порт: PronounDB API, а не встроенные pronouns Discord. В upstream Vencord ему соответствует userMessagesPronouns, но реализация отличается.",
       "community": true,
-      "hash": "621ceaf6973d1d4cc4912c2e81523429827a138b60de74cba5e6d78bd8511a4f",
+      "hash": "148fb6117ce62d36a82d2084cbe1fda0e9633d9eed21193e940b7aa5bfd69ac6",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/",
@@ -152,7 +152,7 @@
       "status": "ported",
       "pluginId": "expression-cloner",
       "category": "Emotes",
-      "hash": "b5680e8ede9383c06c49f737663eaef855e2741fe90227b1a020ae702b4c77ef",
+      "hash": "e663899c157eac7c0d9e6181e3e5d4d127404d3cb84b47eb25caf908965ff790",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/",
@@ -166,7 +166,7 @@
       "status": "ported",
       "pluginId": "view-icons",
       "category": "Profiles",
-      "hash": "936936d4cba33d84cc1f371b5623f1f2c454cc0c0bc1b2a701081fd9b696f6b9",
+      "hash": "b9b2f1b506b572e1671bbc8b5faea78cb67e0c9d537cff78c0a1945913f44c99",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/",
@@ -180,7 +180,7 @@
       "status": "ported",
       "pluginId": "pin-dms",
       "category": "Chat",
-      "hash": "bd9d9bf248dcd656411588f4717a4247514ef52d0d7300ee59e40b93a0e25064",
+      "hash": "183835d137c497e95fb8a42ff42a659a3186c5a00480930b74cc9780a43dbca7",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/",
@@ -293,7 +293,7 @@
       "status": "ported",
       "pluginId": "read-all-notifications",
       "category": "Notifications",
-      "hash": "117c88e55dd88ad40000bb31ddc843c5e9fbc47aa742a72a1fffa0ba4781f7d7",
+      "hash": "4f299f660df96a2057cd3ec01fd2232f4fbdc727be364c6c143b4d77ed7069ef",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/",
@@ -321,7 +321,7 @@
       "status": "ported",
       "pluginId": "hide-attachments",
       "category": "Chat",
-      "hash": "7ccbc89b8329ce424ab57f685af2dbfb6623df554e3900366bb6658784dc0ff1",
+      "hash": "00cdb854ad8f5f64acf4f0914429cb26483195c53ab89117a0c136f6a2c773a8",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/",
@@ -335,7 +335,7 @@
       "status": "ported",
       "pluginId": "copy-emoji-markdown",
       "category": "Emotes",
-      "hash": "4385b15c2a11715ec8900f4c082ed31b64125105e5d6b7b6a12f8f58c02edb41",
+      "hash": "a06066fb1269ebb9777407c59d28c9540ccb7c1ec500578897b00197eb253b37",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/",
@@ -475,7 +475,7 @@
       "category": "Profiles",
       "priority": 1,
       "note": "ПК/веб/мобильный/VR.",
-      "hash": "e103ef8398e1ccc8d1c7d58fe5131eec211ac05f68f9073b81145f9c583dc9de",
+      "hash": "1060fd3fadb7727d378764c4bee1006b9c941b1f18880d48cc677cdccdf31e3c",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/",
@@ -505,7 +505,7 @@
       "category": "Profiles",
       "priority": 1,
       "note": "Отзывы + OAuth.",
-      "hash": "943a6dcfe4db5ca10b2dc1bc08632d3a152093e2c924c02297ec4006d0a0e70d",
+      "hash": "fce5e0cbd6302c4a3cd9323f5dc47e0e4c907e232c5a9b34aaca4d93d0f11051",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",
@@ -520,7 +520,7 @@
       "category": "Profiles",
       "priority": 1,
       "note": "Профиль и чат.",
-      "hash": "621ceaf6973d1d4cc4912c2e81523429827a138b60de74cba5e6d78bd8511a4f",
+      "hash": "148fb6117ce62d36a82d2084cbe1fda0e9633d9eed21193e940b7aa5bfd69ac6",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/",
@@ -550,7 +550,7 @@
       "category": "Emotes",
       "priority": 1,
       "note": "Клонирование эмодзи на сервер.",
-      "hash": "b5680e8ede9383c06c49f737663eaef855e2741fe90227b1a020ae702b4c77ef",
+      "hash": "e663899c157eac7c0d9e6181e3e5d4d127404d3cb84b47eb25caf908965ff790",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/",
@@ -565,7 +565,7 @@
       "category": "Profiles",
       "priority": 1,
       "note": "Аватар/баннер + копирование ссылок.",
-      "hash": "936936d4cba33d84cc1f371b5623f1f2c454cc0c0bc1b2a701081fd9b696f6b9",
+      "hash": "b9b2f1b506b572e1671bbc8b5faea78cb67e0c9d537cff78c0a1945913f44c99",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/",
@@ -580,7 +580,7 @@
       "category": "Chat",
       "priority": 1,
       "note": "Закрепление ЛС вверх списка.",
-      "hash": "bd9d9bf248dcd656411588f4717a4247514ef52d0d7300ee59e40b93a0e25064",
+      "hash": "183835d137c497e95fb8a42ff42a659a3186c5a00480930b74cc9780a43dbca7",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/",
@@ -700,7 +700,7 @@
       "category": "Notifications",
       "priority": 1,
       "note": "Прочитать все серверы.",
-      "hash": "117c88e55dd88ad40000bb31ddc843c5e9fbc47aa742a72a1fffa0ba4781f7d7",
+      "hash": "4f299f660df96a2057cd3ec01fd2232f4fbdc727be364c6c143b4d77ed7069ef",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/",
@@ -730,7 +730,7 @@
       "category": "Chat",
       "priority": 1,
       "note": "Скрыть медиа сообщения.",
-      "hash": "7ccbc89b8329ce424ab57f685af2dbfb6623df554e3900366bb6658784dc0ff1",
+      "hash": "00cdb854ad8f5f64acf4f0914429cb26483195c53ab89117a0c136f6a2c773a8",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/",
@@ -745,7 +745,7 @@
       "category": "Emotes",
       "priority": 1,
       "note": "Копирование <:name:id>.",
-      "hash": "4385b15c2a11715ec8900f4c082ed31b64125105e5d6b7b6a12f8f58c02edb41",
+      "hash": "a06066fb1269ebb9777407c59d28c9540ccb7c1ec500578897b00197eb253b37",
       "install": {
         "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/",

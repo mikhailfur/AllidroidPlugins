@@ -5,7 +5,7 @@
  */
 import {
     patcher, plugin, React, RN, findInReactTree, safeFindByProps, safeStore, safeFindByName,
-    getAssetID, toast, SettingsPage, Section, ActionRow, SwitchRow, patchComponent, findByPath,
+    getAssetID, toast, SettingsPage, Section, ActionRow, SwitchRow, patchComponent, findByPath, safeFindByTypeName,
     applyWithRetry
 } from "@shared";
 
@@ -101,6 +101,7 @@ function ReadAllButton() {
 
 function patchHeader() {
     const header = safeFindByName("MessagesHeader", false)
+        ?? safeFindByTypeName("MessagesHeader", false)
         ?? findByPath("modules/main_tabs_v2/native/tabs/messages/MessagesHeader.tsx", false)
         ?? safeFindByName("MessagesHeader");
     if (!header) return false;
@@ -175,7 +176,9 @@ function MessagesFab() {
 }
 
 function patchFab() {
-    const messages = findByPath("modules/main_tabs_v2/native/tabs/messages/Messages.tsx", false);
+    const messages = findByPath("modules/main_tabs_v2/native/tabs/messages/Messages.tsx", false)
+        ?? safeFindByTypeName("Messages", false)
+        ?? safeFindByName("Messages", false);
     if (!messages) return false;
 
     const before = unpatch.length;

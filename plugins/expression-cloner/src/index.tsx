@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, findInReactTree, safeFindByProps, safeFindByTypeName, safeStore,
+    patcher, plugin, React, findInReactTree, safeFindByProps, safeFindByTypeName, safeFindByName, safeStore,
     allByPath, showSimpleActionSheet, hideActionSheet, toast, table, SettingsPage, Section, SwitchRow, patchComponent,
     applyWithRetry
 } from "@shared";
@@ -125,7 +125,8 @@ function patchEmojiModule(module: any) {
 }
 
 function apply() {
-    const component = safeFindByTypeName("CustomEmojiContent", false);
+    const component = safeFindByTypeName("CustomEmojiContent", false)
+        ?? safeFindByName("CustomEmojiContent", false);
     if (component) patchEmojiModule(component);
 
     for (const path of ["modules/messages/native/emoji/CustomEmojiContent.tsx"]) {
