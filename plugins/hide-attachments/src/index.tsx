@@ -5,13 +5,16 @@
  */
 import {
     patcher, plugin, React, RN, FluxDispatcher, findInReactTree, safeFindByName,
-    safeFindByTypeName, safeStore, SettingsPage, Section, ActionRow, appendActionSheetRow,
+    safeFindByTypeName, safeStore, SettingsPage, Section, ActionRow, appendActionSheetRow, findByPath,
     actionSheetGroup, actionSheetRow, toast, table, patchComponent
+,
+    applyWithRetry
 } from "@shared";
 
 const RowManager = safeFindByName("RowManager");
 const MessageStore = safeStore("MessageStore");
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function hiddenIds(): string[] {
     if (!Array.isArray(plugin.storage.hidden)) plugin.storage.hidden = [];
@@ -73,7 +76,8 @@ function apply() {
     }
 
     const sheet = safeFindByName("MessageLongPressActionSheet", false)
-        ?? safeFindByTypeName("MessageLongPressActionSheet");
+        ?? safeFindByTypeName("MessageLongPressActionSheet", false)
+        ?? findByPath("modules/messages/native/long_press/LongPressMessageActionSheet.tsx", false);
 
     if (sheet) {
         unpatch.push(...patchComponent(sheet, "after", ([props]: any[], tree: any) =>
@@ -113,9 +117,11 @@ function Settings() {
 export default {
     onLoad() {
         if (!Array.isArray(plugin.storage.hidden)) plugin.storage.hidden = [];
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },

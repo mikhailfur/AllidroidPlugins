@@ -63,6 +63,12 @@ Vencord не собирает телеметрию, поэтому «самые 
 
 ---
 
+## 🔍 Полный анализ
+
+Все 168 плагинов Vencord разобраны в [`ANALYSIS.md`](ANALYSIS.md): что портировано, что уже есть в Allidroid, что не портируется и почему. Интерактивная версия — на [Roadmap](https://mikhailfur.github.io/AllidroidPlugins/).
+
+---
+
 ## 🏆 Топ-30 Vencord → Allidroid
 
 Легенда: ✅ портирован · 🧪 beta · ⚪ уже есть в Allidroid · ⛔ не портируется · 🧩 бонус
@@ -77,7 +83,7 @@ Vencord не собирает телеметрию, поэтому «самые 
 | 6 | **PlatformIndicators** — ПК/веб/мобильный/VR | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/) |
 | 7 | **SilentTyping** — скрыть «печатает…» | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-typing/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-typing/) |
 | 8 | **ReviewDB** — отзывы на профили + OAuth | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/) |
-| 9 | **PronounDB** — местоимения в профиле и чате | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/) |
+| 9 | **PronounDB** — местоимения в профиле и чате ¹ | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/) |
 | 10 | **NoBlockedMessages** — скрыть блок/игнор и ответы | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-blocked-messages/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-blocked-messages/) |
 | 11 | **ExpressionCloner** — клонировать эмодзи на сервер | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/) |
 | 12 | **ViewIcons** — аватар/баннер в полном размере | ✅ | [raw](https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/) · [jsDelivr](https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/) |
@@ -99,6 +105,8 @@ Vencord не собирает телеметрию, поэтому «самые 
 | 28 | **CallTimer** — таймер звонка | ⚪ | уже в Allidroid |
 | 29 | **TypingIndicator** — печатает в списке каналов | ⚪ | уже в Allidroid |
 | 30 | **ImageZoom** — зум картинок | ⚪ | уже в Allidroid |
+
+¹ PronounDB — community-порт с API pronoundb.org. В upstream Vencord похожая функция называется `userMessagesPronouns`, но работает иначе.
 
 ---
 

@@ -7,6 +7,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "build:one": "node scripts/build.mjs --only",
+    "analysis": "node scripts/gen-analysis.mjs",
     "index": "node scripts/gen-index.mjs",
     "upstream": "node scripts/sync-upstream.mjs",
     "check": "node scripts/build.mjs --check"

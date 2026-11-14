@@ -6,9 +6,12 @@
 import {
     patcher, plugin, React, copy, findInReactTree, safeFindByTypeName, allByPath,
     SettingsPage, Section, SwitchRow, toast, table
+,
+    applyWithRetry
 } from "@shared";
 
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function markdown(node: any) {
     if (!node) return null;
@@ -63,7 +66,7 @@ function patchComponent(module: any) {
 
 function apply() {
     for (const name of ["CustomEmojiContent", "StandardEmojiContent"]) {
-        const component = safeFindByTypeName(name);
+        const component = safeFindByTypeName(name, false);
         if (component) patchComponent(component);
     }
 
@@ -96,9 +99,11 @@ function Settings() {
 export default {
     onLoad() {
         if (plugin.storage.copyUnicode === undefined) plugin.storage.copyUnicode = true;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },

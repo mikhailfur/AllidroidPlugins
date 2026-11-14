@@ -6,12 +6,15 @@
 import {
     patcher, plugin, React, findInReactTree, safeFindByProps, safeFindByTypeName, safeStore,
     allByPath, showSimpleActionSheet, hideActionSheet, toast, table, SettingsPage, Section, SwitchRow
+,
+    applyWithRetry
 } from "@shared";
 
 const HTTP = safeFindByProps("getAPIBaseURL", "post");
 const GuildStore = safeStore("GuildStore");
 const PermissionStore = safeStore("PermissionStore");
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function blobToDataURL(blob: Blob): Promise<string> {
     return new Promise((resolve, reject) => {
@@ -123,7 +126,7 @@ function patchComponent(module: any) {
 }
 
 function apply() {
-    const component = safeFindByTypeName("CustomEmojiContent");
+    const component = safeFindByTypeName("CustomEmojiContent", false);
     if (component) patchComponent(component);
 
     for (const path of ["modules/messages/native/emoji/CustomEmojiContent.tsx"]) {
@@ -146,9 +149,11 @@ function Settings() {
 export default {
     onLoad() {
         if (plugin.storage.enabled === undefined) plugin.storage.enabled = true;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },

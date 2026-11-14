@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-14T07:57:08.125Z",
+  "updatedAt": "2026-11-14T08:02:45.647Z",
   "repo": "mikhailfur/AllidroidPlugins",
   "branch": "main",
   "plugins": [
@@ -25,7 +25,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "49641d9d3707c9b530c616eb0244777a1034c07f2df361d8e0d417e0bf438149",
+      "hash": "2574147d90b83a3f20ef2364701288c28b4209b9fa8bb0f71fad56a7b54127b2",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/always-trust/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/always-trust/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/always-trust/"
@@ -54,7 +54,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "a59ecf39d663a9fe3ca0f2ec2f8902db0edab32f3da5a853e5b6b137e0dff7c2",
+      "hash": "fa8dc2152ccd94c958383faaf51128a7d51062c91a3286c97c1d9a7cbc809822",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/anonymous-file-names/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/anonymous-file-names/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/anonymous-file-names/"
@@ -80,7 +80,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "212dafc90de91d6d350d274481b59ba1c245404167a7255ffa858dc2b551b9cd",
+      "hash": "f006cb05b952e1896326c09533da9928306d76e442cfb6dbe2b11b4b5d99642e",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-folders/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-folders/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-folders/"
@@ -106,7 +106,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "0d865ad370cad5fec8db20ee5ff657bab7bf441026780eea3748a0d8c1303f8f",
+      "hash": "9ddc3871bd18c0b07252eefa528fa895333e8976320f0064885a17487ae5ab66",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-search/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-search/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-search/"
@@ -132,7 +132,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "41a7559d7dd083190be604c29fc97008b4e9e062006b935f93553bc1e20175e5",
+      "hash": "57661547ccd3bbd0e1ebb9a4add5cbf67bda317b24424143eff84bbdc5a5642a",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/character-counter/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/character-counter/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/character-counter/"
@@ -158,7 +158,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "321c3de6f89cc6f06a97748656812f21758c8e7264669c5ea225b30ef9919940",
+      "hash": "b742bc95cabbc6a3761a3c339401e369572f6cf6127546f8807104f08d867c4f",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/clear-urls/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/clear-urls/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/clear-urls/"
@@ -184,7 +184,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "21fef39f63d00f864477a2d18093bb43b9ed024940c6765d388ee9d4084bdf8d",
+      "hash": "dea091347a6932f902f30572109988a6534e574b873a97d097b0dca7a2f21603",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/copy-emoji-markdown/"
@@ -207,7 +207,7 @@
       "status": "beta",
       "version": "1.0.0",
       "notes": "Заголовки и превью подтягиваются с sponsor.ajay.app. Если API недоступен, эмбеды остаются как есть.",
-      "hash": "0828abc0af35477cb143a5ec7dc4279a5442d5d985cbcd98452cab634a02b495",
+      "hash": "4ead1dc8d065e596cfcd652d2c3119d5836028af533a58f385d919c989afcd4e",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/dearrow/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/dearrow/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/dearrow/"
@@ -233,7 +233,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "a61285433970533b1020e7e3e13fde24834a292db3d35198c0293908cfb53a24",
+      "hash": "640640b81c7445372c4805b1abffde7358aff600fffe4b1391a079b06095e1f2",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/disable-call-idle/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/disable-call-idle/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/disable-call-idle/"
@@ -264,11 +264,11 @@
       ],
       "icon": "EmojiIcon",
       "category": "Emotes",
-      "upstream": "expressionCloner",
+      "upstream": "expressionManager",
       "status": "ported",
       "version": "1.0.0",
       "notes": "Клонирование эмодзи. Клонирование стикеров появится позже.",
-      "hash": "c5c39870be4b653d4ee69e3e3dadd5b7578b72e70ff31a17e141209f09ca4107",
+      "hash": "c5f270b42e2ee311cbd98313f079f47898c2a691e26d825119dbf7f12c7500c4",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/expression-cloner/"
@@ -309,7 +309,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Эмодзи отправляются как ссылки и превращаются в картинки на клиенте. Часть Nitro-функций (темы, иконки приложения) зависит от версии Discord.",
-      "hash": "eeea3c62b76f460efe964fb27f25fdccaa15ff2b93da579eaaf588032969aba7",
+      "hash": "446a1462058de81a56c2ece2e9abf01e2bd967d3a4dfaf9348175650b5af42b1",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/fake-nitro/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/fake-nitro/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/fake-nitro/"
@@ -332,7 +332,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "97e30454d8da36220f0e2b6cb87a4f8b6fbf0c6b2a1b65098befe6701c22754e",
+      "hash": "4f9128f5862952eb79af52f3147d39506e4a87ffc04e209ec4760ebbdc3ff504",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/file-size-on-picker/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/file-size-on-picker/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/file-size-on-picker/"
@@ -358,7 +358,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "acb9b51e760d8ced2e2e4c2a6afe851d6f02daf3905166a710be0a0ef9d1cfa1",
+      "hash": "12bf5009801fab3752e069260760a11ce39c661805ed9f9feaeb93f79bfb9968",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/hide-attachments/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/hide-attachments/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/hide-attachments/"
@@ -405,7 +405,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Мобильная реализация с логом удалений и правок в строках чата. История живёт до перезапуска Allidroid.",
-      "hash": "61183a9e92c2e687bd1b0790df2d58f58a9bb505a515283fa61b793cbdacd8c3",
+      "hash": "02deb2656313c1757e3f80f8cdf19df43345169057d16dd7b4ab24fab554ac83",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/message-logger/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/message-logger/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/message-logger/"
@@ -454,7 +454,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "5ed9a515b9ea44c86ac248de2ab0f488da0a39649c68b644e4644f33fb0eba72",
+      "hash": "4f33b6e745fab829c0fa9e55c54676115be32fb09a531dab146b9aef43e7b369",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-blocked-messages/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-blocked-messages/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-blocked-messages/"
@@ -477,7 +477,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "a3692a4bfbadc029c1409c92cbee1a0cb5a9e86dbabd2b8569631a7663788645",
+      "hash": "b23a9a7e7c6740ce46365c35f5dc12c4c26f16951761f87d2f9389a04b98b87c",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-pending-count/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-pending-count/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-pending-count/"
@@ -509,7 +509,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "92050a8370392c26f47098edbeef37bcc02872bf7d1c0985b7e7f3ebe4c8d1b2",
+      "hash": "affa666d9bfb6b6959c391522aa41c2370729baaebf3c94a8a51bf2bdbf9c708",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/no-reply-mention/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/no-reply-mention/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/no-reply-mention/"
@@ -531,11 +531,11 @@
       ],
       "icon": "PinIcon",
       "category": "Chat",
-      "upstream": "pinDMs",
+      "upstream": "pinDms",
       "status": "ported",
       "version": "1.0.0",
       "notes": "Упрощённая мобильная версия: закрепление в начало списка без категорий.",
-      "hash": "b86da98f334131363c85f2ec9a9897093c87149cfc7ef873949f67682d85816c",
+      "hash": "231996562ef3b81b5fda1649cb1d7012ca79ccc3fc8c9153a2730f8421536146",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pin-dms/"
@@ -561,7 +561,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Платформы берутся из PresenceStore и SessionsStore. Цвет значка соответствует статусу.",
-      "hash": "b3bd4571ad6970b58b807ff8551199e9003016d52f3fcd408aa85c25b5eee7c1",
+      "hash": "e66479b4ae0610f54fc8315b8c360b419eae1afacf368858983bf36b2d82e559",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/platform-indicators/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/platform-indicators/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/platform-indicators/"
@@ -587,7 +587,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Данные берутся из публичного API pronoundb.org. Ничего не отправляется без вашего запроса.",
-      "hash": "4c478d769802b1ca1649369864e243e4820a81cc85bd287ff51bf48a9e53f043",
+      "hash": "9bb02ba54f029831e7c9e60c4558f2f516b53467b28c80045e2e28b2ee48dcaa",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pronoundb/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pronoundb/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pronoundb/"
@@ -613,7 +613,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "cb01eea07b6d39a51677b61da7d8b50c63d87374aec09313e5a5fe8b6e716a13",
+      "hash": "a84b22585e9724b9d7c4e77a4251810423dce146c64babd40e07a00ee6fd10e8",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/read-all-notifications/"
@@ -642,7 +642,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Использует официальный API ReviewDB. Для отправки отзывов нужна авторизация через Discord OAuth.",
-      "hash": "926efe944d81317faac1b28d9b9c88d61a58cd31f869776ef6a7993b911e2dd5",
+      "hash": "66ee32c144a8cf35f3bb8383672624865748e2340c6ab035dcf14e6dfdda1024",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/reviewdb/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/reviewdb/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/reviewdb/"
@@ -671,7 +671,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "3bbf2c88517fab52bbd3508c2ba83054f9c78fdbe6b347d65290319f2ddfe7e1",
+      "hash": "9dba8e5970d36121af7847cf5cf6f2d2b3dc146a1dc9bff8680e770d9fc102d6",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/send-timestamps/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/send-timestamps/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/send-timestamps/"
@@ -697,7 +697,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Открывает канал в режиме «только просмотр»: сообщения не подгружаются, история не раскрывается.",
-      "hash": "c33263f066639fcbbdd41670bce6a552e72afb1495c296e84baad94c399eb992",
+      "hash": "9d89178e278f8c95a285f948c9c52e0c67d7b3ba39ea7395d8df2dc71688330e",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-hidden-channels/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-hidden-channels/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/show-hidden-channels/"
@@ -726,7 +726,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "6c999b1e7bbba9f85b11dce0e1620804601371ea374b58da0e96e9d6aef0d8e3",
+      "hash": "440481e3222cfe793a58794e861c484723c8a2604674f82894bb7bcdb9ac42fa",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/show-timeout-duration/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/show-timeout-duration/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/show-timeout-duration/"
@@ -752,7 +752,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "277b9547d773b2a663dea450feb32c6f701d56a27f44b98232c42c1827dd7b0b",
+      "hash": "064ce7f10c93421d1001118fd410859b5ca0929a7967fdcb3cda186e5414a4dd",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-message-toggle/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-message-toggle/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/silent-message-toggle/"
@@ -781,7 +781,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "8d2aaeab48e1b275eac777e32b2a1ab81b3f4532db60c5b579233603528b862e",
+      "hash": "ed317d629ca97b66dce10545195ecdcec475e410ccfe4fea9488f047c9f767c3",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/silent-typing/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/silent-typing/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/silent-typing/"
@@ -845,7 +845,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "c0a1559fc66d9bba5f8d498bf2ab0c20d4a679b5fa64a82edd0a7fe211e62436",
+      "hash": "0d299aba0daf6f35dbbb77b360c697026527a662f1f8baa8c4db0152c3cd5dc7",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/view-icons/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/view-icons/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/view-icons/"

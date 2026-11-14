@@ -119,6 +119,36 @@ export function allByPath(path: string): any[] {
     return modulesAtPath(path);
 }
 
+export function applyWithRetry(
+    apply: () => void,
+    isDone: () => boolean,
+    delays: number[] = [0, 700, 1800, 4000, 8000, 15000]
+): () => void {
+    let cancelled = false;
+    let done = false;
+
+    const run = () => {
+        if (cancelled || done) return;
+        if (isDone()) {
+            done = true;
+            return;
+        }
+        try {
+            apply();
+        } catch (error) {
+            logger.warn("[AllidroidPlugins] delayed apply failed", error);
+        }
+        if (isDone()) done = true;
+    };
+
+    const timers = delays.map(delay => setTimeout(run, delay));
+
+    return () => {
+        cancelled = true;
+        timers.forEach(timer => clearTimeout(timer));
+    };
+}
+
 export function waitFor<T>(factory: () => T | null | undefined, tries = 20, delay = 750): Promise<T> {
     return new Promise((resolve, reject) => {
         let attempt = 0;
@@ -190,8 +220,13 @@ export function getAssetID(name: string): number | undefined {
 /* Small UI helpers                                                    */
 /* ------------------------------------------------------------------ */
 
+const recentToasts = new Map<string, number>();
+
 export function toast(text: string, asset?: number | string) {
     try {
+        const now = Date.now();
+        if ((recentToasts.get(text) ?? 0) > now - 4000) return;
+        recentToasts.set(text, now);
         const id = typeof asset === "string" ? getAssetID(asset) : asset;
         ui.toasts.showToast(text, id);
     } catch (error) {
@@ -284,7 +319,7 @@ export function openImageModal(url: string, width = 1024, height?: number) {
 let tableCache: any;
 
 export function table() {
-    if (tableCache) return tableCache;
+    if (tableCache && tableCache.TableRow && tableCache.TableRowGroup && tableCache.TableSwitchRow) return tableCache;
 
     const owners = [
         safeFindByProps("TableRowGroup", "TableRow"),
@@ -512,31 +547,43 @@ export function insertIntoChatInput(tree: any, element: any, side: "left" | "rig
 }
 
 export function patchChatInput(paths: string[], element: any, side: "left" | "right" = "left") {
-    const unpatch: (() => void)[] = [];
+    let unpatch: (() => void)[] = [];
+    let cancelled = false;
     const callback = (_args: any[], tree: any) => insertIntoChatInput(tree, element, side);
 
-    for (const path of paths) {
-        for (const mod of allByPath(path)) unpatch.push(...patchComponent(mod, "after", callback));
-    }
-
-    if (!unpatch.length) {
-        for (const name of ["ChatInputActions", "ChatInputRightActions"]) {
-            const mod = safeFindByName(name, false);
-            if (mod) unpatch.push(...patchComponent(mod, "after", callback));
+    const tryPatch = () => {
+        if (cancelled || unpatch.length) return;
+        for (const path of paths) {
+            for (const mod of allByPath(path)) unpatch.push(...patchComponent(mod, "after", callback));
         }
-    }
 
-    return () => unpatch.forEach(fn => fn());
+        if (!unpatch.length) {
+            for (const name of ["ChatInputActions", "ChatInputRightActions"]) {
+                const mod = safeFindByName(name, false);
+                if (mod) unpatch.push(...patchComponent(mod, "after", callback));
+            }
+        }
+    };
+
+    tryPatch();
+    const timers = [700, 1800, 4000, 9000].map(delay => setTimeout(tryPatch, delay));
+
+    return () => {
+        cancelled = true;
+        timers.forEach(timer => clearTimeout(timer));
+        unpatch.forEach(fn => fn());
+        unpatch = [];
+    };
 }
 
 let chatButtonModule: any;
 
 function getChatButtonModule() {
-    if (chatButtonModule !== undefined) return chatButtonModule;
-    chatButtonModule = findByPath("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx", true)
-        ?? safeFindByProps("ChatInputActionButton")?.ChatInputActionButton
-        ?? null;
-    return chatButtonModule;
+    if (chatButtonModule) return chatButtonModule;
+    const found = findByPath("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx", true)
+        ?? safeFindByProps("ChatInputActionButton")?.ChatInputActionButton;
+    if (found) chatButtonModule = found;
+    return found ?? null;
 }
 
 export function ChatButton({ icon, onPress, label, active = false, tint }: any) {

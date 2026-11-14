@@ -6,11 +6,14 @@
 import {
     patcher, plugin, React, FluxDispatcher, safeFindByName, safeFindByProps, safeStore,
     appendActionSheetRow, actionSheetRow, SettingsPage, Section, ActionRow, toast
+,
+    applyWithRetry
 } from "@shared";
 
 const PrivateChannelSortStore = safeStore("PrivateChannelSortStore") ?? safeFindByProps("getPrivateChannelIds");
 const ChannelStore = safeStore("ChannelStore");
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function pinned(): string[] {
     if (!Array.isArray(plugin.storage.pinned)) plugin.storage.pinned = [];
@@ -100,9 +103,11 @@ function Settings() {
 export default {
     onLoad() {
         if (!Array.isArray(plugin.storage.pinned)) plugin.storage.pinned = [];
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
         refresh();

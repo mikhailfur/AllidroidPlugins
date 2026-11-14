@@ -5,11 +5,14 @@
  */
 import {
     patcher, plugin, React, RN, safeFindByName, safeFindByProps, toast
+,
+    applyWithRetry
 } from "@shared";
 
 const Locale = safeFindByProps("Messages");
 const Searching = safeFindByProps("SEARCH_PAGE_SIZE");
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function apply() {
     const results = safeFindByName("ConnectedSearchResults", false);
@@ -89,9 +92,11 @@ function apply() {
 
 export default {
     onLoad() {
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     }

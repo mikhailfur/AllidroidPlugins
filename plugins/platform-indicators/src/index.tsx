@@ -4,8 +4,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, RN, findInReactTree, safeStore, safeFindByTypeName,
+    patcher, plugin, React, RN, findInReactTree, safeStore, safeFindByTypeName, findByPath,
     getAssetID, SettingsPage, Section, SwitchRow, toast, patchComponent
+,
+    applyWithRetry
 } from "@shared";
 
 const PresenceStore = safeStore("PresenceStore");
@@ -105,11 +107,12 @@ function appendIcons(tree: any, userId: string) {
 }
 
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function apply() {
     if (plugin.storage.profile !== false) {
-        const profile = safeFindByTypeName("UserProfilePrimaryInfo")
-            ?? safeFindByTypeName("UserProfilePrimaryInfo", false);
+        const profile = safeFindByTypeName("UserProfilePrimaryInfo", false)
+            ?? findByPath("modules/user_profile/native/UserProfilePrimaryInfo.tsx", false);
         if (profile) {
             unpatch.push(...patchComponent(profile, "after", ([props]: any[], tree: any) =>
                 appendIcons(tree, props?.user?.id)
@@ -118,7 +121,8 @@ function apply() {
     }
 
     if (plugin.storage.dmList !== false) {
-        const item = safeFindByTypeName("MessagesItemChannelContent");
+        const item = safeFindByTypeName("MessagesItemChannelContent", false)
+            ?? findByPath("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelContent.tsx", false);
         if (item) {
             unpatch.push(...patchComponent(item, "after", ([props]: any[], tree: any) => {
                 const channel = props?.channel;
@@ -129,7 +133,8 @@ function apply() {
     }
 
     if (plugin.storage.memberList !== false) {
-        const row = safeFindByTypeName("UserRow");
+        const row = safeFindByTypeName("UserRow", false)
+            ?? findByPath("modules/main_tabs_v2/native/shared_components/user_list/UserRow.tsx", false);
         if (row) {
             unpatch.push(...patchComponent(row, "after", ([props]: any[], tree: any) =>
                 appendIcons(tree, props?.user?.id ?? props?.type?.user?.id)
@@ -157,9 +162,11 @@ export default {
         if (plugin.storage.profile === undefined) plugin.storage.profile = true;
         if (plugin.storage.dmList === undefined) plugin.storage.dmList = true;
         if (plugin.storage.memberList === undefined) plugin.storage.memberList = true;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },

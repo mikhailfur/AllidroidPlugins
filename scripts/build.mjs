@@ -135,6 +135,9 @@ if (!only && !check) {
     }
     roadmap.updatedAt = index.updatedAt;
     await writeFile(join(root, "docs/roadmap.json"), `${JSON.stringify(roadmap, null, 2)}\n`);
+
+    const analysis = await import("./gen-analysis.mjs");
+    void analysis;
 }
 
 if (check) {

@@ -5,8 +5,10 @@
  */
 import {
     patcher, plugin, React, RN, copy, findInReactTree, safeFindByName, safeFindByProps,
-    safeFindByTypeName, safeStore, toast, SettingsPage, Section, SwitchRow, ActionRow,
+    safeFindByTypeName, safeStore, toast, SettingsPage, Section, SwitchRow, ActionRow, findByPath,
     table, patchComponent
+,
+    applyWithRetry
 } from "@shared";
 
 const API_URL = "https://manti.vendicated.dev/api/reviewdb";
@@ -266,9 +268,15 @@ function appendToProfile(tree: any, userId: string) {
 }
 
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function patchProfile(name: string) {
-    const component = safeFindByTypeName(name);
+    const paths: Record<string, string> = {
+        UserProfileContent: "modules/user_profile/native/UserProfileContent.tsx",
+        SimplifiedUserProfileContent: "modules/user_profile/native/SimplifiedUserProfileContent.tsx"
+    };
+    const component = safeFindByTypeName(name, false)
+        ?? (paths[name] ? findByPath(paths[name], false) : null);
     if (!component) return;
 
     unpatch.push(...patchComponent(component, "after", ([props]: any[], tree: any) => {
@@ -326,9 +334,11 @@ export default {
     onLoad() {
         if (plugin.storage.authToken === undefined) plugin.storage.authToken = "";
         if (plugin.storage.showWarning === undefined) plugin.storage.showWarning = true;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },

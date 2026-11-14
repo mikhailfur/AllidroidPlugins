@@ -6,9 +6,12 @@
 import {
     patcher, plugin, React, RN, findInReactTree, safeFindByName,
     formatBytes, SettingsPage, Section, SwitchRow, toast, patchComponent
+,
+    applyWithRetry
 } from "@shared";
 
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 const cache: Record<string, number> = {};
 
 function FileManager() {
@@ -86,9 +89,11 @@ function Settings() {
 export default {
     onLoad() {
         if (plugin.storage.enabled === undefined) plugin.storage.enabled = true;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },

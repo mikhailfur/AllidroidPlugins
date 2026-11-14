@@ -6,11 +6,14 @@
 import {
     patcher, plugin, React, RN, FluxDispatcher, safeFindByProps, safeFindByPropsAll,
     safeStore, SettingsPage, Section, SwitchRow, toast, getAssetID
+,
+    applyWithRetry
 } from "@shared";
 
 const UserSettingsProtoStore = safeStore("UserSettingsProtoStore") ?? safeFindByProps("getGuildFolders");
 const ExpandedGuildFolderStore = safeStore("ExpandedGuildFolderStore");
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function updateFolderIcons() {
     try {
@@ -114,9 +117,11 @@ export default {
     onLoad() {
         if (plugin.storage.autoCollapse === undefined) plugin.storage.autoCollapse = false;
         if (plugin.storage.hideIcons === undefined) plugin.storage.hideIcons = false;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
         setTimeout(updateFolderIcons, 100);

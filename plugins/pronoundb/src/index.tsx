@@ -4,8 +4,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, RN, findInReactTree, safeFindByTypeName, safeStore,
+    patcher, plugin, React, RN, findInReactTree, safeFindByTypeName, safeStore, findByPath,
     SettingsPage, Section, SwitchRow, toast, logger, patchComponent
+,
+    applyWithRetry
 } from "@shared";
 
 const UserStore = safeStore("UserStore");
@@ -89,9 +91,15 @@ function appendToProfile(tree: any, userId: string) {
 }
 
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function patchProfile(name: string) {
-    const component = safeFindByTypeName(name);
+    const paths: Record<string, string> = {
+        UserProfileContent: "modules/user_profile/native/UserProfileContent.tsx",
+        SimplifiedUserProfileContent: "modules/user_profile/native/SimplifiedUserProfileContent.tsx"
+    };
+    const component = safeFindByTypeName(name, false)
+        ?? (paths[name] ? findByPath(paths[name], false) : null);
     if (!component) return;
 
     unpatch.push(...patchComponent(component, "after", ([props]: any[], tree: any) => {
@@ -172,9 +180,11 @@ export default {
     onLoad() {
         if (plugin.storage.inChat === undefined) plugin.storage.inChat = true;
         if (plugin.storage.asTimestamp === undefined) plugin.storage.asTimestamp = true;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
         queue.length = 0;

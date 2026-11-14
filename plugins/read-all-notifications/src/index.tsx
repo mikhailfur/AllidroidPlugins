@@ -5,7 +5,9 @@
  */
 import {
     patcher, plugin, React, RN, findInReactTree, safeFindByProps, safeStore, safeFindByName,
-    getAssetID, toast, SettingsPage, Section, ActionRow, patchComponent
+    getAssetID, toast, SettingsPage, Section, ActionRow, patchComponent, findByPath
+,
+    applyWithRetry
 } from "@shared";
 
 const GuildStore = safeStore("GuildStore");
@@ -13,6 +15,7 @@ const GuildChannelStore = safeStore("GuildChannelStore");
 const ReadStateStore = safeStore("ReadStateStore");
 const ReadStateActions = safeFindByProps("bulkAck");
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function collect() {
     const channels: any[] = [];
@@ -65,7 +68,9 @@ function ReadAllIcon() {
 }
 
 function patchHeader() {
-    const header = safeFindByName("MessagesHeader", false) ?? safeFindByName("MessagesHeader");
+    const header = safeFindByName("MessagesHeader", false)
+        ?? findByPath("modules/main_tabs_v2/native/tabs/messages/MessagesHeader.tsx", false)
+        ?? safeFindByName("MessagesHeader");
     if (!header) return false;
 
     unpatch.push(...patchComponent(header, "after", (_args: any[], tree: any) => {
@@ -122,9 +127,11 @@ function Settings() {
 
 export default {
     onLoad() {
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },

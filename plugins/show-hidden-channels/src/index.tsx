@@ -6,6 +6,8 @@
 import {
     patcher, plugin, React, RN, Constants, safeFindByName, safeFindByProps, safeStore,
     SettingsPage, Section, SwitchRow, toast
+,
+    applyWithRetry
 } from "@shared";
 
 const Permissions = safeFindByProps("getChannelPermissions", "can");
@@ -16,6 +18,7 @@ const MessagesWrapper = safeFindByName("MessagesWrapperConnected", false)
 
 const SKIP = new Set([1, 3, 4]);
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function getChannel(channel: any) {
     if (!channel) return null;
@@ -111,9 +114,11 @@ export default {
         if (plugin.storage.showTopic === undefined) plugin.storage.showTopic = true;
         if (plugin.storage.showDates === undefined) plugin.storage.showDates = true;
         if (plugin.storage.showLastMessage === undefined) plugin.storage.showLastMessage = true;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },

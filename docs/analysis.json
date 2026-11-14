@@ -1,0 +1,1358 @@
+{
+  "upstream": "d07030c0968e31e41caa0c35fda0ef8ae63a079e",
+  "pluginCount": 168,
+  "counts": {
+    "ported": 26,
+    "beta": 1,
+    "builtin": 6,
+    "planned": 9,
+    "not-portable": 29,
+    "backlog": 97
+  },
+  "rows": [
+    {
+      "name": "alwaysTrust",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "always-trust",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": false
+    },
+    {
+      "name": "anonymiseFileNames",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "anonymous-file-names",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": false
+    },
+    {
+      "name": "betterFolders",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "better-folders",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "betterSearch",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "better-search",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "characterCounter",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "character-counter",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "clearURLs",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "clear-urls",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "copyEmojiMarkdown",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "copy-emoji-markdown",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "disableCallIdle",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "disable-call-idle",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": false
+    },
+    {
+      "name": "expressionManager",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "expression-cloner",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "fakeNitro",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "fake-nitro",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "hideAttachments",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "hide-attachments",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "messageLogger",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "message-logger",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "noBlockedMessages",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "no-blocked-messages",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "noPendingCount",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "no-pending-count",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": false
+    },
+    {
+      "name": "noReplyMention",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "no-reply-mention",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "pinDms",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "pin-dms",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "platformIndicators",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "platform-indicators",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "readAllNotificationsButton",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "read-all-notifications",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "reviewDB",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "reviewdb",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "sendTimestamps",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "send-timestamps",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "showHiddenChannels",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "show-hidden-channels",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "showTimeoutDuration",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "show-timeout-duration",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "silentMessageToggle",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "silent-message-toggle",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "silentTyping",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "silent-typing",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "usrbg",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "usrbg",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "viewIcons",
+      "status": "ported",
+      "label": "✅ Портирован",
+      "pluginId": "view-icons",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "dearrow",
+      "status": "beta",
+      "label": "🧪 Beta",
+      "pluginId": "dearrow",
+      "reason": "Работает как user plugin, установка по ссылке.",
+      "top": true
+    },
+    {
+      "name": "callTimer",
+      "status": "builtin",
+      "label": "⚪ Уже в Allidroid",
+      "pluginId": null,
+      "reason": "В мобильном Discord таймер звонка уже показывается в шапке голосового канала (OngoingCallTimer). Дублировать его не нужно.",
+      "top": true
+    },
+    {
+      "name": "experiments",
+      "status": "builtin",
+      "label": "⚪ Уже в Allidroid",
+      "pluginId": null,
+      "reason": "В Allidroid уже есть раздел экспериментов.",
+      "top": true
+    },
+    {
+      "name": "imageZoom",
+      "status": "builtin",
+      "label": "⚪ Уже в Allidroid",
+      "pluginId": null,
+      "reason": "Мобильный просмотрщик медиа уже умеет пинч-зум и полноэкранный просмотр.",
+      "top": true
+    },
+    {
+      "name": "openInApp",
+      "status": "builtin",
+      "label": "⚪ Уже в Allidroid",
+      "pluginId": null,
+      "reason": "Функция уже есть в мобильном Discord / Allidroid.",
+      "top": true
+    },
+    {
+      "name": "typingIndicator",
+      "status": "builtin",
+      "label": "⚪ Уже в Allidroid",
+      "pluginId": null,
+      "reason": "В мобильном клиенте индикатор печати уже есть в списке каналов и в шапке ЛС. Vencord добавляет его на десктоп, где такого нет.",
+      "top": true
+    },
+    {
+      "name": "voiceMessages",
+      "status": "builtin",
+      "label": "⚪ Уже в Allidroid",
+      "pluginId": null,
+      "reason": "Функция уже есть в мобильном Discord / Allidroid.",
+      "top": true
+    },
+    {
+      "name": "betterGifPicker",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "Можно переключать провайдера и размер, но мобильный GIF-пикер сильно отличается.",
+      "top": true
+    },
+    {
+      "name": "blurNsfw",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "Можно блюрить медиа в NSFW-каналах через transformMessageAttachments.",
+      "top": true
+    },
+    {
+      "name": "friendInvites",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "API создания инвайтов простой, нужен UI в меню друзей.",
+      "top": true
+    },
+    {
+      "name": "mentionAvatars",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "Меншены парсятся нативным парсером Discord, а не JS. Нужен отдельный трюк с customEmoji-нодой.",
+      "top": true
+    },
+    {
+      "name": "messageLinkEmbeds",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "Нужен fetch связанных сообщений и кастомный рендер карточки. Нативный RowGenerator не поддерживает произвольные embeds из плагина.",
+      "top": true
+    },
+    {
+      "name": "mutualGroupDMs",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "Нужен API-запрос взаимных групп и вставка секции в профиль.",
+      "top": true
+    },
+    {
+      "name": "relationshipNotifier",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "Нужны Flux-события друзей и локальные уведомления.",
+      "top": true
+    },
+    {
+      "name": "serverInfo",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "Добавляется в контекстное меню сервера; на мобильном меню нативное.",
+      "top": true
+    },
+    {
+      "name": "whoReacted",
+      "status": "planned",
+      "label": "🛠 Запланирован",
+      "pluginId": null,
+      "reason": "Можно добавить аватары реакций в JSON строки, но нужен аккуратный patch под текущий формат реакций.",
+      "top": true
+    },
+    {
+      "name": "arRPC.web",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "autoDndWhilePlaying.discordDesktop",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "betterSettings",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Плагин перестраивает DOM настроек десктопа; мобильные настройки нативные.",
+      "top": true
+    },
+    {
+      "name": "consoleJanitor",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "consoleShortcuts",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "customRPC",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Плагин общается с локальным Discord RPC/IPC на ПК. В Android/iOS такого сокета нет.",
+      "top": true
+    },
+    {
+      "name": "directFileDownload.desktop",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "f8break",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "fixSpotifyEmbeds.desktop",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "fixYoutubeEmbeds.desktop",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "noDeepLinks.web",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "noDevtoolsWarning",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "noF1",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "noMaskedUrlPaste",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "noMosaic",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "noSystemBadge.discordDesktop",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "oneko",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "pictureInPicture",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "previewMessage",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "quickReply",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "shikiCodeblocks.desktop",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "spotifyControls",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "На мобильном нет account panel и постоянного Spotify-плеера над ним. Панель Spotify есть внутри профиля, но это другой нативный UI.",
+      "top": true
+    },
+    {
+      "name": "themeAttributes",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "vencordToolbox",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Это тулбар и быстрые настройки поверх десктопного интерфейса. На мобильном нет постоянной панели, куда его встроить.",
+      "top": true
+    },
+    {
+      "name": "volumeBooster",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Опирается на десктопные API, DOM или локальный RPC.",
+      "top": true
+    },
+    {
+      "name": "webContextMenus.web",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "webKeybinds.web",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "webScreenShareFixes.web",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "youtubeAdblock.desktop",
+      "status": "not-portable",
+      "label": "⛔ Не портируется",
+      "pluginId": null,
+      "reason": "Десктопный вариант: DOM/CSS или API, которых нет в мобильном клиенте.",
+      "top": true
+    },
+    {
+      "name": "accountPanelServerProfile",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "addAttachments",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "alwaysAnimate",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "alwaysExpandRoles",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "betterGifAltText",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "betterRoleContext",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "betterRoleDot",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "betterSessions",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "betterUploadButton",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "biggerStreamPreview",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "clientTheme",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "colorSighted",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "copyFileContents",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "copyUserURLs",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "crashHandler",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "customCommands",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "customIdle",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "decor",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "devCompanion.dev",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "dontRoundMyTimestamps",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "fakeProfileThemes",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "favEmojiFirst",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "fixCodeblockGap",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "fixImagesQuality",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "forceOwnerCrown",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "fullSearchContext",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "gameActivityToggle",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "gifPaste",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "gifProviderSwitcher",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "greetStickerPicker",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "ignoreActivities",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "iLoveSpam",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "imageFilename",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "imageLink",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "implicitRelationships",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "ircColors",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "jumpToTop",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "keepCurrentChannel",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "loadingQuotes",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "memberCount",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "messageClickActions",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "messageLatency",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "moreQuickReactions",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "musicRichPresence",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "mutedServersActivityBadge",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "newGuildSettings",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "noMiddleClickPaste",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "noOnboardingDelay",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "noProfileThemes",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "noServerEmojis",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "notificationVolume",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "noTypingAnimation",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "noUnblockToJump",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "onePingPerDM",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "overrideForumDefaults",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "pauseInvitesForever",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "permissionFreeWill",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "permissionsViewer",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "petpet",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "plainFolderIcon",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "quickMention",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "reactErrorDecoder",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "replaceGoogleSearch",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "replyTimestamp",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "revealAllSpoilers",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "reverseImageSearch",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "roleColorEverywhere",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "secretRingTone",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "serverListIndicators",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "showAllMessageButtons",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "showConnections",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "showHiddenThings",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "showMeYourName",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "sortFriendRequests",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "spotifyCrack",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "spotifyShareCommands",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "startupTimings",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "stickerPaste",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "streamerModeOnStream",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "superReactionTweaks",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "textReplace",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "translate",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "typingTweaks",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "unindent",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "unlockedAvatarZoom",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "unsuppressEmbeds",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "userMessagesPronouns",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "userVoiceShow",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "validReply",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "validUser",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "vcDoubleClick",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "vcNarrator",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "viewRaw",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "voiceDownload",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "webPWA.browser",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "webScreenShare.browser",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    },
+    {
+      "name": "xsOverlay",
+      "status": "backlog",
+      "label": "📋 Бэклог",
+      "pluginId": null,
+      "reason": "Не входит в топ-30. Порт возможен после разбора мобильных модулей.",
+      "top": true
+    }
+  ]
+}

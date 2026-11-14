@@ -4,14 +4,17 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, findInReactTree, safeFindByTypeName, safeStore, safeFindByProps,
+    patcher, plugin, React, findInReactTree, safeFindByTypeName, safeStore, safeFindByProps, findByPath,
     openImageModal, copy, SettingsPage, Section, SwitchRow, toast, table, patchComponent
+,
+    applyWithRetry
 } from "@shared";
 
 const UserStore = safeStore("UserStore");
 const UserProfileStore = safeStore("UserProfileStore");
 const GuildMemberStore = safeStore("GuildMemberStore");
 let unpatch: (() => void)[] = [];
+let retryCancel: (() => void) | null = null;
 
 function urls(userId: string, guildId?: string) {
     const user = UserStore?.getUser?.(userId);
@@ -76,7 +79,8 @@ function appendRows(tree: any, userId: string, guildId?: string) {
 }
 
 function apply() {
-    const component = safeFindByTypeName("UserProfileActionSheet");
+    const component = safeFindByTypeName("UserProfileActionSheet", false)
+        ?? findByPath("modules/user_profile/native/UserProfileActionSheet.tsx", false);
     if (!component) {
         toast("ViewIcons: UserProfileActionSheet not found", "WarningIcon");
         return;
@@ -102,9 +106,11 @@ function Settings() {
 export default {
     onLoad() {
         if (plugin.storage.enabled === undefined) plugin.storage.enabled = true;
-        apply();
+        retryCancel = applyWithRetry(apply, () => unpatch.length > 0);
     },
     onUnload() {
+        retryCancel?.();
+        retryCancel = null;
         unpatch.forEach(fn => fn());
         unpatch = [];
     },
