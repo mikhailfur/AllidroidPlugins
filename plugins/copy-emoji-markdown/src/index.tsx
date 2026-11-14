@@ -5,7 +5,7 @@
  */
 import {
     patcher, plugin, React, copy, findInReactTree, safeFindByTypeName, allByPath,
-    SettingsPage, Section, SwitchRow, toast, table,
+    SettingsPage, Section, SwitchRow, toast, table, patchComponent,
     applyWithRetry
 } from "@shared";
 
@@ -51,10 +51,10 @@ function appendRow(tree: any, node: any) {
     return tree;
 }
 
-function patchComponent(module: any) {
+function patchEmojiModule(module: any) {
     if (!module?.default) return;
     try {
-        unpatch.push(patcher.after("default", module, ([props]: any[], tree: any) => {
+        unpatch.push(...patchComponent(module, "after", ([props]: any[], tree: any) => {
             const node = props?.emojiNode;
             return node ? appendRow(tree, node) : tree;
         }));
@@ -66,14 +66,14 @@ function patchComponent(module: any) {
 function apply() {
     for (const name of ["CustomEmojiContent", "StandardEmojiContent"]) {
         const component = safeFindByTypeName(name, false);
-        if (component) patchComponent(component);
+        if (component) patchEmojiModule(component);
     }
 
     for (const path of [
         "modules/messages/native/emoji/CustomEmojiContent.tsx",
         "modules/messages/native/emoji/StandardEmojiContent.tsx"
     ]) {
-        for (const module of allByPath(path)) patchComponent(module);
+        for (const module of allByPath(path)) patchEmojiModule(module);
     }
 
     if (!unpatch.length) toast("CopyEmojiMarkdown: emoji sheet not found", "WarningIcon");

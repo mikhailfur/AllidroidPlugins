@@ -5,7 +5,7 @@
  */
 import {
     patcher, plugin, React, findInReactTree, safeFindByProps, safeFindByTypeName, safeStore,
-    allByPath, showSimpleActionSheet, hideActionSheet, toast, table, SettingsPage, Section, SwitchRow,
+    allByPath, showSimpleActionSheet, hideActionSheet, toast, table, SettingsPage, Section, SwitchRow, patchComponent,
     applyWithRetry
 } from "@shared";
 
@@ -113,10 +113,10 @@ function appendRow(tree: any, node: any) {
     return tree;
 }
 
-function patchComponent(module: any) {
+function patchEmojiModule(module: any) {
     if (!module?.default) return;
     try {
-        unpatch.push(patcher.after("default", module, ([props]: any[], tree: any) =>
+        unpatch.push(...patchComponent(module, "after", ([props]: any[], tree: any) =>
             props?.emojiNode ? appendRow(tree, props.emojiNode) : tree
         ));
     } catch (error) {
@@ -126,10 +126,10 @@ function patchComponent(module: any) {
 
 function apply() {
     const component = safeFindByTypeName("CustomEmojiContent", false);
-    if (component) patchComponent(component);
+    if (component) patchEmojiModule(component);
 
     for (const path of ["modules/messages/native/emoji/CustomEmojiContent.tsx"]) {
-        for (const module of allByPath(path)) patchComponent(module);
+        for (const module of allByPath(path)) patchEmojiModule(module);
     }
 
     if (!unpatch.length) toast("ExpressionCloner: emoji sheet not found", "WarningIcon");

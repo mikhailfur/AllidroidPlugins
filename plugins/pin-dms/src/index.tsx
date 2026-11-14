@@ -5,7 +5,7 @@
  */
 import {
     patcher, plugin, React, FluxDispatcher, safeFindByName, safeFindByProps, safeStore,
-    appendActionSheetRow, actionSheetRow, SettingsPage, Section, ActionRow, toast,
+    appendActionSheetRow, actionSheetRow, SettingsPage, Section, ActionRow, toast, patchComponent,
     applyWithRetry
 } from "@shared";
 
@@ -55,8 +55,8 @@ function apply() {
     }
 
     const sheet = safeFindByName("ChannelLongPressActionSheet", false);
-    if (sheet?.default) {
-        unpatch.push(patcher.after("default", sheet, ([props]: any[], tree: any) => {
+    if (sheet) {
+        unpatch.push(...patchComponent(sheet, "after", ([props]: any[], tree: any) => {
             const channelId = props?.channelId ?? props?.channel?.id;
             const channel = ChannelStore?.getChannel?.(channelId);
             if (!channel || ![1, 3].includes(channel.type)) return tree;

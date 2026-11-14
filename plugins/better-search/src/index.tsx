@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-    patcher, plugin, React, RN, safeFindByName, safeFindByProps, toast,
+    patcher, plugin, React, RN, safeFindByName, safeFindByProps, toast, patchComponent,
     applyWithRetry
 } from "@shared";
 
@@ -20,7 +20,7 @@ function apply() {
         return;
     }
 
-    unpatch.push(patcher.after("default", results, (_args: any[], tree: any) => {
+    unpatch.push(...patchComponent(results, "after", (_args: any[], tree: any) => {
         const proto = tree?.type?.prototype;
         if (!proto?.render) return tree;
 

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-14T08:04:10.512Z",
+  "updatedAt": "2026-11-14T08:08:22.685Z",
   "repo": "mikhailfur/AllidroidPlugins",
   "branch": "main",
   "plugins": [
@@ -106,7 +106,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "9ddc3871bd18c0b07252eefa528fa895333e8976320f0064885a17487ae5ab66",
+      "hash": "cd92462bcbb397f7c9b633b5bc423793de7dab92d0b70ed97605c1ea05d33f45",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/better-search/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/better-search/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/better-search/"
@@ -184,7 +184,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "dea091347a6932f902f30572109988a6534e574b873a97d097b0dca7a2f21603",
+      "hash": "900b4fd0cc2ac845817fc667642c8047df4b2fe403774286a6ef7ec11240600e",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/copy-emoji-markdown/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/copy-emoji-markdown/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/copy-emoji-markdown/"
@@ -268,7 +268,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Клонирование эмодзи. Клонирование стикеров появится позже.",
-      "hash": "c5f270b42e2ee311cbd98313f079f47898c2a691e26d825119dbf7f12c7500c4",
+      "hash": "5150cb16100d2557994f28ba7fe64c3cedf6fc650b43d692c5f1010dd6a91557",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/expression-cloner/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/expression-cloner/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/expression-cloner/"
@@ -535,7 +535,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": "Упрощённая мобильная версия: закрепление в начало списка без категорий.",
-      "hash": "231996562ef3b81b5fda1649cb1d7012ca79ccc3fc8c9153a2730f8421536146",
+      "hash": "43b3f135fd4a42973be8092e9a284e6985090c3ee8287761bd561db9ed8d7b72",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/pin-dms/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/pin-dms/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/pin-dms/"
