@@ -5,7 +5,7 @@
  */
 import {
     patcher, plugin, React, RN, findInReactTree, safeFindByProps, safeStore, safeFindByName,
-    getAssetID, toast, SettingsPage, Section, ActionRow, SwitchRow, patchComponent, findByPath, safeFindByTypeName,
+    getAssetID, toast, SettingsPage, Section, ActionRow, SwitchRow, patchComponent, findByPath, safeFindByTypeName, appendActionSheetRow, actionSheetRow,
     applyWithRetry
 } from "@shared";
 
@@ -193,10 +193,30 @@ function patchFab() {
     return unpatch.length > before;
 }
 
+function patchChannelSheet() {
+    const sheet = safeFindByName("ChannelLongPressActionSheet", false)
+        ?? safeFindByTypeName("ChannelLongPressActionSheet", false);
+    if (!sheet) return false;
+
+    const before = unpatch.length;
+    unpatch.push(...patchComponent(sheet, "after", (_args: any[], tree: any) => {
+        if (findInReactTree(tree, (node: any) => node?.key === "read-all-sheet-row")) return tree;
+        const row = actionSheetRow("Прочитать всё", readAll, "CheckmarkIcon");
+        if (row) {
+            const keyed = React.cloneElement(row, { key: "read-all-sheet-row" });
+            appendActionSheetRow(tree, keyed);
+        }
+        return tree;
+    }));
+
+    return unpatch.length > before;
+}
+
 function apply() {
     const header = patchHeader();
     const fab = patchFab();
-    if (!header && !fab) {
+    const sheet = patchChannelSheet();
+    if (!header && !fab && !sheet) {
         toast("ReadAllNotificationsButton: кнопка не найдена — используйте настройки", "WarningIcon");
     }
 }

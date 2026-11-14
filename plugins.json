@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-14T08:54:32.118Z",
+  "updatedAt": "2026-11-14T08:57:02.634Z",
   "repo": "mikhailfur/AllidroidPlugins",
   "branch": "main",
   "plugins": [
@@ -613,7 +613,7 @@
       "status": "ported",
       "version": "1.0.0",
       "notes": null,
-      "hash": "4f299f660df96a2057cd3ec01fd2232f4fbdc727be364c6c143b4d77ed7069ef",
+      "hash": "48edfbeebb8b7a75bec0ca3a5b30cddd51ebb713f40be8d7e813db1ce89426f3",
       "raw": "https://raw.githubusercontent.com/mikhailfur/AllidroidPlugins/main/plugins/read-all-notifications/",
       "jsdelivr": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@main/plugins/read-all-notifications/",
       "stable": "https://cdn.jsdelivr.net/gh/mikhailfur/AllidroidPlugins@v1.0.0/plugins/read-all-notifications/"
