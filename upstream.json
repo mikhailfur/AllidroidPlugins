@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-14T07:56:01.927Z",
+  "checkedAt": "2026-11-17T15:57:01.901Z",
   "repo": "Vendicated/Vencord",
   "branch": "main",
-  "commit": "d07030c0968e31e41caa0c35fda0ef8ae63a079e",
-  "commitDate": "2026-11-11T03:27:05Z",
-  "commitMessage": "NoTrack: allow tracking necessary for game/stream progress badge (#4804)",
+  "commit": "e75ac9ace41f6212cfaa2d5f3670830be392da4e",
+  "commitDate": "2026-11-16T21:29:26Z",
+  "commitMessage": "fix WebScreenshareFixes",
   "pluginCount": 168,
   "plugins": [
     "accountPanelServerProfile",
