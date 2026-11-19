@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-17T15:57:01.901Z",
+  "checkedAt": "2026-11-19T15:41:36.595Z",
   "repo": "Vendicated/Vencord",
   "branch": "main",
-  "commit": "e75ac9ace41f6212cfaa2d5f3670830be392da4e",
-  "commitDate": "2026-11-16T21:29:26Z",
-  "commitMessage": "fix WebScreenshareFixes",
+  "commit": "a846785482f96c50f1160a04217e1e90283d2ec1",
+  "commitDate": "2026-11-19T14:54:35Z",
+  "commitMessage": "WebScreenShare: fix crash if getDisplayMedia is unavailable",
   "pluginCount": 168,
   "plugins": [
     "accountPanelServerProfile",
