@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-11-19T15:41:36.595Z",
+  "checkedAt": "2026-11-21T14:36:55.443Z",
   "repo": "Vendicated/Vencord",
   "branch": "main",
-  "commit": "a846785482f96c50f1160a04217e1e90283d2ec1",
-  "commitDate": "2026-11-19T14:54:35Z",
-  "commitMessage": "WebScreenShare: fix crash if getDisplayMedia is unavailable",
-  "pluginCount": 168,
+  "commit": "ce9355e9a93e369c7295fa162ad563f7f97b1ff7",
+  "commitDate": "2026-11-21T04:24:00Z",
+  "commitMessage": "ShowHiddenChannels: remove more dead functionality",
+  "pluginCount": 167,
   "plugins": [
     "accountPanelServerProfile",
     "addAttachments",
@@ -24,6 +24,7 @@
     "betterSessions",
     "betterSettings",
     "betterUploadButton",
+    "betterYoutubeEmbeds.desktop",
     "biggerStreamPreview",
     "blurNsfw",
     "callTimer",
@@ -55,7 +56,6 @@
     "fixCodeblockGap",
     "fixImagesQuality",
     "fixSpotifyEmbeds.desktop",
-    "fixYoutubeEmbeds.desktop",
     "forceOwnerCrown",
     "friendInvites",
     "fullSearchContext",
@@ -173,12 +173,16 @@
     "webScreenShare.browser",
     "webScreenShareFixes.web",
     "whoReacted",
-    "xsOverlay",
-    "youtubeAdblock.desktop"
+    "xsOverlay"
   ],
   "changes": {
     "changed": true,
-    "added": [],
-    "removed": []
+    "added": [
+      "betterYoutubeEmbeds.desktop"
+    ],
+    "removed": [
+      "fixYoutubeEmbeds.desktop",
+      "youtubeAdblock.desktop"
+    ]
   }
 }
