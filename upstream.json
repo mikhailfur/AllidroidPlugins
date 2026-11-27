@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-11-25T17:09:06.337Z",
+  "checkedAt": "2026-11-27T16:35:55.624Z",
   "repo": "Vendicated/Vencord",
   "branch": "main",
-  "commit": "d086992fb674299a2fa05ac6432edc3a777389f3",
-  "commitDate": "2026-11-24T21:36:37Z",
-  "commitMessage": "v1.15.19",
-  "pluginCount": 167,
+  "commit": "ff5810de5ac334c912321d7528d6d923d28c2db5",
+  "commitDate": "2026-11-26T00:28:12Z",
+  "commitMessage": "Fix EditUsers compatibility with other plugins and reply previews",
+  "pluginCount": 168,
   "plugins": [
     "accountPanelServerProfile",
     "addAttachments",
@@ -47,6 +47,7 @@
     "directFileDownload.desktop",
     "disableCallIdle",
     "dontRoundMyTimestamps",
+    "editUsers",
     "experiments",
     "expressionManager",
     "f8break",
@@ -177,7 +178,9 @@
   ],
   "changes": {
     "changed": true,
-    "added": [],
+    "added": [
+      "editUsers"
+    ],
     "removed": []
   }
 }
